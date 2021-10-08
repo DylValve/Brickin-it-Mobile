@@ -17,5 +17,37 @@ namespace LegoMobile
         {
             InitializeComponent();
         }
+        public async void LoginPage()
+        {
+            Users.Login getloginPage = new Users.Login();
+            await Navigation.PushModalAsync(getloginPage);
+        }
+
+        private void LoginButton_Clicked(object sender, EventArgs e)
+        {
+            LoginPage();
+        }
+
+
+        public async void SighupPage()
+        {
+            Users.SignUp getsighupPage = new Users.SignUp();
+            await Navigation.PushModalAsync(getsighupPage);
+        }
+        private void SignupButton_Clicked(object sender, EventArgs e)
+        {
+            SighupPage();
+        }
+
+        public async void MainMenuPage()
+        {
+            MainMenuPage MainMenu = new MainMenuPage();
+            await Navigation.PushModalAsync(MainMenu);
+        }
+
+        private void MainMenu_Clicked(object sender, EventArgs e)
+        {
+            MainMenuPage();
+        }
     }
 }

@@ -10,37 +10,50 @@
             <StackLayout                 
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
-                WidthRequest="200">
+                WidthRequest="300">
                 <Label
                     Text="Sign UP"                
                     FontAttributes="Bold"
                     FontSize="30"
                     VerticalTextAlignment="Center"
-                    HorizontalTextAlignment="Center">
+                    HorizontalTextAlignment="Center"
+                    WidthRequest="300">
 
                 </Label>
-                <Entry    
+                <Entry  
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
                     Placeholder="Name"
-                    Margin="0, 15,0,15">
+                    Margin="0, 15,0,15"
+                    WidthRequest="300">
                 </Entry>
 
-                <Entry    
+                <Entry
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
                     Placeholder="Username"
-                    Margin="0, 15, 0, 15">
+                    Margin="0, 15, 0, 15"
+                    WidthRequest="300">
                 </Entry>
-                <Entry    
+                <Entry 
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
                     Placeholder="Email"
-                    Margin="0, 15,0,15">
+                    Margin="0, 15,0,15"
+                    WidthRequest="300">
                 </Entry>
-                <Entry    
+                <Entry
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"  
                     Placeholder="Password"
-                    Margin="0, 15, 0, 0">
+                    Margin="0, 15, 0, 0"
+                    WidthRequest="300">
                 </Entry>
             </StackLayout>
             <StackLayout                 
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
-                WidthRequest="200">
+                WidthRequest="300">
                 <Button    
                     CornerRadius="25"
                     Text="Create Account"
