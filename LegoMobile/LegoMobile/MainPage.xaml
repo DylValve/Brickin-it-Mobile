@@ -7,10 +7,39 @@
              x:Class="LegoMobile.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+
+        <Image Source="logo-social-sq.png"/>
+        <!-- Place new controls here  -->
+        <Label Text="Brinkin it"
+               FontAttributes="Bold"
+               FontSize="48"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <StackLayout                 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                WidthRequest="300">
+            <Button    
+                CornerRadius="25"
+                Text="Login"
+                BackgroundColor="#035a91" 
+                TextColor="Black"                     
+                Margin="20"
+                FontSize="26"
+                x:Name="LoginButton" Clicked="LoginButton_Clicked">
+            </Button>
+            <Button    
+                CornerRadius="25"
+                Text="Sign Up"
+                BackgroundColor="#035a91" 
+                TextColor="Black"
+                Margin="20"
+                FontSize="26"
+                x:Name="SignupButton" Clicked="SignupButton_Clicked" >
+            </Button>
+
+            <Button Text="Main Menu" BackgroundColor="#035a91"   Margin="20, 20, 20,0" x:Name="MainMenu" Clicked="MainMenu_Clicked"></Button>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
