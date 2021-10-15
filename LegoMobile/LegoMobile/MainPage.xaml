@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LegoMobile.MainPage">
+
+    <StackLayout>
+
+        <Image Source="logo-social-sq.png"/>
+        <!-- Place new controls here  -->
+        <Label Text="Brinkin it"
+               FontAttributes="Bold"
+               FontSize="48"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"/>
+        <StackLayout
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                WidthRequest="300">
+            <Button
+                CornerRadius="25"
+                Text="Login"
+                BackgroundColor="#035a91" 
+                TextColor="Black"                     
+                Margin="20"
+                FontSize="26"
+                x:Name="LoginButton" 
+                Clicked="LoginButton_Clicked"
+                IsVisible="True">
+            </Button>
+            <Button
+                CornerRadius="25"
+                Text="Sign Up"
+                BackgroundColor="#035a91" 
+                TextColor="Black"
+                Margin="20"
+                FontSize="26"
+                x:Name="SignUpButton" 
+                Clicked="SignUpButton_Clicked"
+                IsVisible="True">
+            </Button>
+            <Button
+                CornerRadius="25"
+                Text="Log Out"
+                BackgroundColor="#035a91" 
+                TextColor="Black"
+                Margin="20"
+                FontSize="26"
+                x:Name="LogOutButton" 
+                Clicked="LogOutButton_Clicked"
+                IsVisible="False">
+            </Button>
+            <Button
+                CornerRadius="25"
+                Text="Main Menu" 
+                BackgroundColor="#035a91" 
+                TextColor="Black"
+                Margin="20"
+                FontSize="26"
+                x:Name="MainMenuButton" 
+                Clicked="MainMenu_Clicked"
+                IsVisible="False">
+            </Button>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LegoMobile.Users.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout                 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                WidthRequest="300">
+                <Entry    
+                    x:Name="UsernameEntry"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Placeholder="Username"
+                    Margin="0, 0,0,15"
+                    WidthRequest="300">
+                </Entry>
+                <Entry
+                    x:Name="PasswordEntry"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Placeholder="Password"
+                    Margin="0, 15, 0, 0"
+                    WidthRequest="300">
+                </Entry>
+            </StackLayout>
+            <StackLayout                 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                WidthRequest="300">
+                <Button
+                    x:Name="LoginButton"
+                    CornerRadius="25"
+                    Text="Login"
+                    BackgroundColor="#035a91" 
+                    TextColor="Black"
+                    Clicked="LoginButton_Clicked">
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
