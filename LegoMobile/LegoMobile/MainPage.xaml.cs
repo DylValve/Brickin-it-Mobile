@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -35,8 +38,8 @@ namespace LegoMobile
             {
                 LoginButton.IsVisible = true;
                 SignUpButton.IsVisible = true;
-                LogOutButton.IsVisible = false;
-                MainMenuButton.IsVisible = false;
+                LogOutButton.IsVisible = true;
+                MainMenuButton.IsVisible = true;
             }
         }
 
@@ -80,9 +83,9 @@ namespace LegoMobile
             }
         }
 
-        private void LogOutButton_Clicked(object sender, EventArgs e)
+        private async void LogOutButton_Clicked(object sender, EventArgs e)
         {
-
+            await((App)Application.Current).API.LogoutRequest();
         }
     }
 }

@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace LegoMobile.Users
 {
@@ -17,34 +21,19 @@ namespace LegoMobile.Users
             InitializeComponent();
         }
 
-        private void LoginButton_Clicked(object sender, EventArgs e)
+        private async void LoginButton_Clicked(object sender, EventArgs e)
         {
-            string UsernameAPI = "test";
-            string PasswordAPI = "test";
-            string Token = "test";
-            string NewToken = "NewToken";
-            string EnteredUsername = UsernameEntry.Text;
-            string EnteredPassword = PasswordEntry.Text;
+            string emailEntry = EmailEntry.Text;
+            string passwordEntry = PasswordEntry.Text;
+            bool success = await ((App)Application.Current).API.LoginRequest(emailEntry, passwordEntry);
 
-            if (EnteredUsername == UsernameAPI)
+            if (success)
             {
-                if (EnteredPassword == PasswordAPI)
-                {
-                    Console.WriteLine("Login");
-                    Token = NewToken;
-                    if (Token == NewToken)
-                    {
-                        MainPage();
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Incorrect Password");
-                }
+                Console.WriteLine("Login");
             }
             else
             {
-                Console.WriteLine("Invalid User");
+                Console.WriteLine("Entry Denied");
             }
         }
 
