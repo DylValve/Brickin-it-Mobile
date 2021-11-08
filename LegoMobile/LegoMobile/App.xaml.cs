@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -6,9 +7,13 @@ namespace LegoMobile
 {
     public partial class App : Application
     {
+        public APIService API { get; set; }
+
         public App()
         {
             InitializeComponent();
+
+            API = new APIService();
 
             MainPage = new MainPage();
         }

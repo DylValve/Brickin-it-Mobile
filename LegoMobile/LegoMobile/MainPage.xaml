@@ -14,31 +14,55 @@
                FontAttributes="Bold"
                FontSize="48"
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-        <StackLayout                 
+           VerticalOptions="CenterAndExpand"/>
+        <StackLayout
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 WidthRequest="300">
-            <Button    
+            <Button
                 CornerRadius="25"
                 Text="Login"
                 BackgroundColor="#035a91" 
-                TextColor="Black"                     
+                TextColor="White"                     
                 Margin="20"
                 FontSize="26"
-                x:Name="LoginButton" Clicked="LoginButton_Clicked">
+                x:Name="LoginButton" 
+                Clicked="LoginButton_Clicked"
+                IsVisible="True">
             </Button>
-            <Button    
+            <Button
                 CornerRadius="25"
                 Text="Sign Up"
                 BackgroundColor="#035a91" 
-                TextColor="Black"
+                TextColor="White"
                 Margin="20"
                 FontSize="26"
-                x:Name="SignupButton" Clicked="SignupButton_Clicked" >
+                x:Name="SignUpButton" 
+                Clicked="SignUpButton_Clicked"
+                IsVisible="True">
             </Button>
-
-            <Button Text="Main Menu" BackgroundColor="#035a91"   Margin="20, 20, 20,0" x:Name="MainMenu" Clicked="MainMenu_Clicked"></Button>
+            <Button
+                CornerRadius="25"
+                Text="Main Menu" 
+                BackgroundColor="#035a91" 
+                TextColor="White"
+                Margin="20"
+                FontSize="26"
+                x:Name="MainMenuButton" 
+                Clicked="MainMenu_Clicked"
+                IsVisible="False">
+            </Button>
+            <Button
+                CornerRadius="25"
+                Text="Log Out"
+                BackgroundColor="#035a91" 
+                TextColor="White"
+                Margin="20"
+                FontSize="26"
+                x:Name="LogOutButton" 
+                Clicked="LogOutButton_Clicked"
+                IsVisible="False">
+            </Button>
         </StackLayout>
     </StackLayout>
 
