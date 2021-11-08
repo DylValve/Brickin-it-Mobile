@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CO0WhVn1icw9YYJfX9noOtYXw+RxJEi4enF3ENU5N57sVXKIK7aKc1RX5nq0Aj3zuhpwm5V3GVqU9hk1NHYPVw==",
+  "dgSpecHash": "liC9KZAvd0K2/SwEI/BHcechYA1eZ2FAyYw6lxvMJe3olidzKcFuCzjiE39VlQMtEnpMK8e8+raO4yml2+qIVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\patri\\source\\repos\\Brickin-it-Mobile(4)\\Brickin-it-Mobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
+  "projectFilePath": "C:\\Users\\patri\\Documents\\GitHub\\Brickin-it-Mobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patri\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\patri\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

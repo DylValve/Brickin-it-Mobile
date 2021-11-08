@@ -680,11 +680,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patri\\source\\repos\\Brickin-it-Mobile(4)\\Brickin-it-Mobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj",
+      "projectUniqueName": "C:\\Users\\patri\\Documents\\GitHub\\Brickin-it-Mobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj",
       "projectName": "LegoMobile",
-      "projectPath": "C:\\Users\\patri\\source\\repos\\Brickin-it-Mobile(4)\\Brickin-it-Mobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj",
+      "projectPath": "C:\\Users\\patri\\Documents\\GitHub\\Brickin-it-Mobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj",
       "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patri\\source\\repos\\Brickin-it-Mobile(4)\\Brickin-it-Mobile\\LegoMobile\\LegoMobile\\obj\\",
+      "outputPath": "C:\\Users\\patri\\Documents\\GitHub\\Brickin-it-Mobile\\LegoMobile\\LegoMobile\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
