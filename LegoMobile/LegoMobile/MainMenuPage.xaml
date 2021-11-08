@@ -35,12 +35,12 @@
                 </Button>
                 <Button    
                     CornerRadius="25"
-                    Text="View Whishlists"
+                    Text="Barcode Scanner"
                     BackgroundColor="#035a91" 
                     TextColor="White"
                     Margin="0,25,0,0"
-                    x:Name="ViewWhishlistsButton"
-                    Clicked="ViewWhishlistsButton_Clicked">
+                    x:Name="BarcodeButton"
+                    Clicked="BarcodeButton_Clicked">
                 </Button>
 
             </StackLayout>

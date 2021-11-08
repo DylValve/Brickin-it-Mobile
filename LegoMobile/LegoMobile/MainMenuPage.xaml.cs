@@ -12,14 +12,14 @@ namespace LegoMobile
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainMenuPage : ContentPage
     {
-        public MainMenuPage()
+        public MainMenuPage(Action<string> callback)
         {
             InitializeComponent();
         }
         public async void LookUpSetPage()
         {
-            NewFolder2.LookUpSet LookUpSet = new NewFolder2.LookUpSet();
-            await Navigation.PushModalAsync(LookUpSet);
+            NewFolder2.LookUpSet lookUpSet = new NewFolder2.LookUpSet();
+            await Navigation.PushModalAsync(lookUpSet);
         }
 
         private void LookUpSetButton_Clicked(object sender, EventArgs e)
@@ -38,9 +38,15 @@ namespace LegoMobile
             ViewAllCollections();
         }
 
-        private void ViewWhishlistsButton_Clicked(object sender, EventArgs e)
+        private void BarcodeButton_Clicked(object sender, EventArgs e)
         {
+            ScanPage();
+        }
 
+        public async void ScanPage()
+        {
+            ScanPage scanPage = new ScanPage();
+            await Navigation.PushModalAsync(scanPage);
         }
     }
 }
