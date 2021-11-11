@@ -72,6 +72,7 @@ namespace LegoMobile
 
         private void MainMenu_Clicked(object sender, EventArgs e)
         {
+            MainMenuPage();
             if (LoggedIn == true)
             {
                 MainMenuPage();

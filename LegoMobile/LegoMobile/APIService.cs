@@ -5,6 +5,10 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+
 
 namespace LegoMobile
 {
@@ -106,28 +110,25 @@ namespace LegoMobile
 
         }
 
-        public async Task<bool> CreateSet(string name, string set_number, string picture, int theme_id)
+        public async Task<bool> CreateSet(string name, string set_number, string picture, int theme_id, string barcode)
         {
             try
             {
-                var sets = new HttpSets();
+                var client = new HttpClient();
 
                 MultipartFormDataContent form = new MultipartFormDataContent(); // creating form and filling with data 
                 form.Add(new StringContent(name), "name");
                 form.Add(new StringContent(set_number), "set_number");
                 form.Add(new StringContent(picture), "picture");
-                form.Add(new StringContent(theme_id), "theme_id");
+                form.Add(new StringContent(theme_id.ToString()), "theme_id");
+                form.Add(new StringContent(barcode), "barcode");
 
-                var response = await client.PostAsync("http://brickin-it.herokuapp.com/api/sets", form);// // sending the http response from brickin-it 
+                var response = await client.PostAsync("https://brickin-it.herokuapp.com/api/sets", form);// // sending the http response from brickin-it 
 
                 string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it 
                 Set sets = JsonConvert.DeserializeObject<Set>(content);
 
-                if (sets.success)
-                {
-                    return sets.success;
-                }
-                return sets.success;
+                return true;
             }
             catch (Exception e)
             {
@@ -136,29 +137,45 @@ namespace LegoMobile
             }
 
 
-        
-            
+
+
         }
 
-        public async Task<bool> viewSet()
+        public async Task<Set> viewSet(string setNumer) // using async 
+        {
+            Set viewSets;
+
+            try
+            {
+                var client = new HttpClient();
+
+                var requestMessage = new HttpRequestMessage(HttpMethod.Get, "http://brickin-it.herokuapp.com/api/sets/look-up-by/number/" + setNumer); // Create Http Request
+                var response = await client.SendAsync(requestMessage); // Send Request
+
+                string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it 
+                viewSets = JsonConvert.DeserializeObject<Set>(content);
+                return viewSets;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+                return null;
+            }
+
+        }
+        public async Task<bool> Update(int id, string name, string set_number, string picture, int theme_id, int barcode)
         {
             try
             {
                 using (var client = new HttpClient())
                 {
-                    var requestMessage = new HttpRequestMessage(HttpMethod.Post, "http://brickin-it.herokuapp.com/api/sets"); // Create Http Request
-                    
+                    var requestMessage = new HttpRequestMessage(HttpMethod.Put, "https://brickin-it.herokuapp.com/api/sets/" + id + "?name=" + name + "&set_number=23446&picture=piv&theme_id=56&barcode=356778"); // Create Http Request
 
                     var response = await client.SendAsync(requestMessage); // Send Request
 
                     string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it 
                     Set viewSets = JsonConvert.DeserializeObject<Set>(content);
-
-                    if (viewSets.success)
-                    {
-                        return viewSets.success;
-                    }
-                    return viewSets.success;
+                    return true;
                 }
             }
             catch (Exception e)
@@ -166,6 +183,11 @@ namespace LegoMobile
                 Console.WriteLine(e);
                 return false;
             }
-    }
 
+
+
+
+        }
+
+    }
 }

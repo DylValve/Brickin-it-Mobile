@@ -33,6 +33,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
                    
+                   
             />
                 <Entry Placeholder=" Name"
                    Grid.Column="2"
@@ -43,6 +44,7 @@
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
+                   x:Name="AddSetName"
             />
 
                 <Label Text="Set Number: "
@@ -64,8 +66,9 @@
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
+                  x:Name="AddSetNumber"
             />
-                <Label Text="Age Range:"
+                <Label Text="Picture:"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Grid.Row="3"
@@ -75,7 +78,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Entry Placeholder="  Age Range "
+                <Entry Placeholder="  Picture "
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
                    Grid.Row="3"
@@ -84,8 +87,9 @@
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
+                   x:Name="AddPicture"
             />
-                <Label Text="Number of Pieces:"
+                <Label Text="Theme Id:"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Grid.Row="4"
@@ -95,7 +99,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Entry Placeholder="Number of Pieces"
+                <Entry Placeholder="theme id"
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
                    Grid.Row="4"
@@ -104,55 +108,42 @@
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
-            />
-                <Label Text="Dimensions:"
-                   Grid.Column="0"
-                   Grid.ColumnSpan="2"
-                   Grid.Row="5"
-                   FontSize="26"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"
-                   TextColor="Black"
-                   Margin ="0,0,0,0"
-            />
-                <Entry Placeholder="Dimensions"
-                   Grid.Column="2"
-                   Grid.ColumnSpan="2"
-                   Grid.Row="5"
-                   FontSize="26"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"
-                   TextColor="Black"
-                   Margin ="0,0,0,0"
-
+                   x:Name="AddthemeId"
             />
                 <Label Text="Barcode:"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
-                   Grid.Row="6"
+                   Grid.Row="5"
                    FontSize="26"
                    VerticalTextAlignment="Center"
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Entry Placeholder="Barcode"
+                <Entry Placeholder="barcode"
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
-                   Grid.Row="6"
+                   Grid.Row="5"
                    FontSize="26"
                    VerticalTextAlignment="Center"
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
+                   x:Name="AddBarcode"
+
             />
+                
+            
             </Grid>
             <Button Text="Add Set"
                 WidthRequest="300"
                 FontSize="26"
                 CornerRadius="25"
                 Margin="20"
-                BackgroundColor="#55a349" ></Button>
+                BackgroundColor="#55a349"
+                x:Name="AddSetButton">
+                
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
