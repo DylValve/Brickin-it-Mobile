@@ -4,19 +4,17 @@ using System.Text;
 
 namespace LegoMobile
 {
-    class User
+    public class Collection
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Email { get; set; }
-        public string Token { get; set; }
+        public int User_Id { get; set; }
 
-        public User(int id, string name, string email, string token)
+        public Collection (int id, string name, int user_id)
         {
             Id = id;
             Name = name;
-            Email = email;
-            Token = token;
+            User_Id = user_id;
         }
     }
 }

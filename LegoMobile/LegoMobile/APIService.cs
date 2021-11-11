@@ -32,7 +32,7 @@ namespace LegoMobile
                 string content = await response.Content.ReadAsStringAsync(); // getting the http response from brickin-it 
                 UserResponse login = JsonConvert.DeserializeObject<UserResponse>(content);
 
-                currentUser = new User(login.data.name, email, login.data.token);
+                currentUser = new User(login.data.id, login.data.name, email, login.data.token);
 
                 loggedIn = true;
                 return login.success;
@@ -61,7 +61,7 @@ namespace LegoMobile
                 string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it 
                 UserResponse register = JsonConvert.DeserializeObject<UserResponse>(content);
 
-                currentUser = new User(register.data.name, email, register.data.token);
+                currentUser = new User(register.data.id, register.data.name, email, register.data.token);
 
                 loggedIn = true;
                 return register.success;
@@ -136,6 +136,29 @@ namespace LegoMobile
                 Console.WriteLine(e);
                 return false;
             }
+        }
+
+        public async Task<List<Collection>> ShowCollections()
+        {
+            List<Collection> collectionList = new List<Collection>();
+
+            var client = new HttpClient(); /// get the client id 
+
+            var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://brickin-it.herokuapp.com/api/collections");
+            var response = await client.SendAsync(requestMessage);
+
+            string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it 
+
+            dynamic dynJson = JsonConvert.DeserializeObject(content);
+            foreach (var collection in dynJson)
+            {
+                if (collection.user_id == currentUser.Id)
+                {
+                    Collection newCollection = new Collection(collection.id, collection.name, collection.user_id);
+                    collectionList.Add(newCollection);
+                }
+            }
+            return collectionList;
         }
     }
 }
