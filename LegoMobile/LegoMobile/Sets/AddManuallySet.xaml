@@ -141,7 +141,8 @@
                 CornerRadius="25"
                 Margin="20"
                 BackgroundColor="#55a349"
-                x:Name="AddSetButton">
+                x:Name="AddSetButton" 
+                Clicked="AddSetButton_Clicked">
                 
             </Button>
         </StackLayout>

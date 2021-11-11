@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LegoMobile.NewFolder1.AddSetToCollection.CollectionAddManuallySet.xaml", "NewFolder1/AddSetToCollection/CollectionAddManuallySet.xaml", typeof(global::LegoMobile.NewFolder1.AddSetToCollection.CollectionAddManuallySet))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LegoMobile.Collections.AddSetToCollection.CollectionAddManuallySet.xaml", "Collections/AddSetToCollection/CollectionAddManuallySet.xaml", typeof(global::LegoMobile.NewFolder1.AddSetToCollection.CollectionAddManuallySet))]
 
 namespace LegoMobile.NewFolder1.AddSetToCollection {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("NewFolder1\\AddSetToCollection\\CollectionAddManuallySet.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Collections\\AddSetToCollection\\CollectionAddManuallySet.xaml")]
     public partial class CollectionAddManuallySet : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

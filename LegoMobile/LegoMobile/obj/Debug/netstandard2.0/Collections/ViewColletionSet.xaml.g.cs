@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LegoMobile.NewFolder1.ViewColletionSet.xaml", "NewFolder1/ViewColletionSet.xaml", typeof(global::LegoMobile.NewFolder1.ViewColletionSet))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LegoMobile.Collections.ViewColletionSet.xaml", "Collections/ViewColletionSet.xaml", typeof(global::LegoMobile.NewFolder1.ViewColletionSet))]
 
 namespace LegoMobile.NewFolder1 {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("NewFolder1\\ViewColletionSet.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Collections\\ViewColletionSet.xaml")]
     public partial class ViewColletionSet : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

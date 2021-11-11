@@ -143,13 +143,6 @@ C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoM
 C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\FirstPage.xaml.g.cs
 C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainMenuPage.xaml.g.cs
 C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\NewFolder1\AddCollection.xaml.g.cs
-C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\NewFolder1\AddSetToCollection\CollectionAddManuallySet.xaml.g.cs
-C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\NewFolder1\AddSetToCollection\CollectionFoundSet.xaml.g.cs
-C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\NewFolder1\AddSetToCollection\CollectionLookUpSet.xaml.g.cs
-C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\NewFolder1\ViewAllCollections.xaml.g.cs
-C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\NewFolder1\ViewCollection.xaml.g.cs
-C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\NewFolder1\ViewColletionSet.xaml.g.cs
 C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\AddManuallySet.xaml.g.cs
 C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\FoundSet.xaml.g.cs
 C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\LookUpSet.xaml.g.cs
@@ -163,3 +156,10 @@ C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoM
 C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\ref\LegoMobile.dll
 C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.pdb
 C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddCollection.xaml.g.cs
+C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionAddManuallySet.xaml.g.cs
+C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionFoundSet.xaml.g.cs
+C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionLookUpSet.xaml.g.cs
+C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewAllCollections.xaml.g.cs
+C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollection.xaml.g.cs
+C:\Users\giova\source\repos\Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewColletionSet.xaml.g.cs

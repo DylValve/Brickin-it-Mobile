@@ -29,25 +29,25 @@
     <EmbeddedResource Update="MainMenuPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="NewFolder1\AddCollection.xaml">
+    <EmbeddedResource Update="Collections\AddCollection.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="NewFolder1\AddSetToCollection\CollectionAddManuallySet.xaml">
+    <EmbeddedResource Update="Collections\AddSetToCollection\CollectionAddManuallySet.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="NewFolder1\AddSetToCollection\CollectionFoundSet.xaml">
+    <EmbeddedResource Update="Collections\AddSetToCollection\CollectionFoundSet.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="NewFolder1\AddSetToCollection\CollectionLookUpSet.xaml">
+    <EmbeddedResource Update="Collections\AddSetToCollection\CollectionLookUpSet.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="NewFolder1\ViewAllCollections.xaml">
+    <EmbeddedResource Update="Collections\ViewAllCollections.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="NewFolder1\ViewCollection.xaml">
+    <EmbeddedResource Update="Collections\ViewCollection.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="NewFolder1\ViewColletionSet.xaml">
+    <EmbeddedResource Update="Collections\ViewColletionSet.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="NewFolder2\AddManuallySet.xaml">

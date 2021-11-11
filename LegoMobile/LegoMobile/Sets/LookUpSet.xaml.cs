@@ -20,12 +20,12 @@ namespace LegoMobile.NewFolder2
         {
             if (APISet == null)
             {
-                DisplayAlert("Fuck");
+                DisplayAlert("NO working");
             }
             else
             {
                 FoundSet foundSet = new FoundSet(APISet);
-                DisplayAlert(APISet.Name);
+             
                 await Navigation.PushModalAsync(foundSet);
             }
         }

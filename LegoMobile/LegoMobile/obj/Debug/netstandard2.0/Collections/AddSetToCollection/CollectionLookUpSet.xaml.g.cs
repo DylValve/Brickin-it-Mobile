@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LegoMobile.NewFolder1.AddSetToCollection.CollectionLookUpSet.xaml", "NewFolder1/AddSetToCollection/CollectionLookUpSet.xaml", typeof(global::LegoMobile.NewFolder1.AddSetToCollection.CollectionLookUpSet))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LegoMobile.Collections.AddSetToCollection.CollectionLookUpSet.xaml", "Collections/AddSetToCollection/CollectionLookUpSet.xaml", typeof(global::LegoMobile.NewFolder1.AddSetToCollection.CollectionLookUpSet))]
 
 namespace LegoMobile.NewFolder1.AddSetToCollection {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("NewFolder1\\AddSetToCollection\\CollectionLookUpSet.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Collections\\AddSetToCollection\\CollectionLookUpSet.xaml")]
     public partial class CollectionLookUpSet : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
