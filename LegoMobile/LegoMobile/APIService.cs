@@ -150,14 +150,14 @@ namespace LegoMobile
             {
                 var client = new HttpClient();
 
-                var requestMessage = new HttpRequestMessage(HttpMethod.Get, "http://brickin-it.herokuapp.com/api/sets/look-up-by/number/" + setNumer); // Create Http Request
+                var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://brickin-it.herokuapp.com/api/sets/look-up-by/number/" + setNumer); // Create Http Request
                 var response = await client.SendAsync(requestMessage); // Send Request
 
                 string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it 
                 viewSets = JsonConvert.DeserializeObject<Set>(content);
                 return viewSets;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e);
                 return null;
@@ -200,16 +200,18 @@ namespace LegoMobile
 
             string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it
 
-            dynamic dynJson = JsonConvert.DeserializeObject(content);
-            foreach (var collection in dynJson)
+            List<Collection> dynJson = JsonConvert.DeserializeObject<List<Collection>>(content);
+            if (dynJson == null)
             {
-                if (collection.user_id == currentUser.Id)
-                {
-                    Collection newCollection = new Collection(collection.id, collection.name, collection.user_id);
-                    collectionList.Add(newCollection);
-                }
+                List<Collection> lists = new List<Collection>();
+                return lists;
             }
-            return collectionList;
+            else
+            {
+                return dynJson;
+            }
+
+
         }
 
     }
