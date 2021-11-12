@@ -4,9 +4,18 @@ using System.Text;
 
 namespace LegoMobile.Collections
 {
-    class Collection
+    public class Collection
     {
-        public string name { get; set; }
-        public int user_id { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public int User_Id { get; set; }
+
+        public Collection(int id, string name, int user_id)
+        {
+            ID = id;
+            Name = name;
+            User_Id = user_id;
+        }
+
     }
 }
