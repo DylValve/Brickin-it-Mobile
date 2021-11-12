@@ -18,34 +18,36 @@
                     VerticalTextAlignment="Center"
                     HorizontalTextAlignment="Center"
                     WidthRequest="300">
-
                 </Label>
-                <Entry  
+                <Entry
+                    x:Name="Name"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
                     Placeholder="Name"
                     Margin="0, 15,0,15"
                     WidthRequest="300">
                 </Entry>
-
                 <Entry
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="Center"
-                    Placeholder="Username"
-                    Margin="0, 15, 0, 15"
-                    WidthRequest="300">
-                </Entry>
-                <Entry 
+                    x:Name="Email"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
                     Placeholder="Email"
+                    Margin="0, 15, 0, 15"
+                    WidthRequest="300">
+                </Entry>
+                <Entry
+                    x:Name="Password"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Placeholder="Password"
                     Margin="0, 15,0,15"
                     WidthRequest="300">
                 </Entry>
                 <Entry
+                    x:Name="ConfirmPassword"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"  
-                    Placeholder="Password"
+                    Placeholder="Confirm Password"
                     Margin="0, 15, 0, 0"
                     WidthRequest="300">
                 </Entry>
@@ -58,7 +60,7 @@
                     CornerRadius="25"
                     Text="Create Account"
                     BackgroundColor="#035a91" 
-                    TextColor="Black">
+                    TextColor="White">
                 </Button>
             </StackLayout>
         </StackLayout>

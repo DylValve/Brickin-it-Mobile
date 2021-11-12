@@ -12,13 +12,15 @@
                 HorizontalOptions="Center"
                 WidthRequest="300">
                 <Entry    
+                    x:Name="EmailEntry"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
-                    Placeholder="Username"
+                    Placeholder="Email"
                     Margin="0, 0,0,15"
                     WidthRequest="300">
                 </Entry>
-                <Entry  
+                <Entry
+                    x:Name="PasswordEntry"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
                     Placeholder="Password"
@@ -30,11 +32,13 @@
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 WidthRequest="300">
-                <Button    
+                <Button
+                    x:Name="LoginButton"
                     CornerRadius="25"
-                    Text="Sign in"
+                    Text="Login"
                     BackgroundColor="#035a91" 
-                    TextColor="Black">
+                    TextColor="White"
+                    Clicked="LoginButton_Clicked">
                 </Button>
             </StackLayout>
         </StackLayout>
