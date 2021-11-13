@@ -24,8 +24,6 @@ namespace LegoMobile
             Device.BeginInvokeOnMainThread(async () =>
             {
                 await DisplayAlert("Scanned result", "The barcode's text is " + result.Text + ". The barcode's format is " + result.BarcodeFormat, "OK");
-                string test = result.Text;
-                MainMenuPage mainMenuPage = new MainMenuPage(test) ;
             });
         }
     }

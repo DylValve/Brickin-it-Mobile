@@ -12,7 +12,7 @@ namespace LegoMobile
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainMenuPage : ContentPage
     {
-        public MainMenuPage(Action<string> callback)
+        public MainMenuPage()
         {
             InitializeComponent();
         }

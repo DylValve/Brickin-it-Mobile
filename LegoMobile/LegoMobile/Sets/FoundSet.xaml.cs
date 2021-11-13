@@ -12,9 +12,19 @@ namespace LegoMobile.NewFolder2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FoundSet : ContentPage
     {
-        public FoundSet()
+        public FoundSet(Set APISet)
         {
             InitializeComponent();
+            FillTextBoxes(APISet);
+        }
+
+        void FillTextBoxes(Set APISet)
+        {
+            fetchSetName.Text = APISet.Name;
+            fetchSetNumber.Text = APISet.SetNumber;
+            fetchPicture.Text = APISet.Picture;
+            fetchthemeId.Text = APISet.themeId.ToString();
+            fetchBarcode.Text = APISet.Barcode;
         }
     }
 }

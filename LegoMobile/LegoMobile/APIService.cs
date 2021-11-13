@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -99,11 +100,11 @@ namespace LegoMobile
         }
 
         /// Sets
-        public async Task<Set> ShowSet(int id)
+        public async Task<Set> ShowSet(string setNumer)
         {
             var client = new HttpClient(); /// get the client id 
 
-            var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://brickin-it.herokuapp.com/api/sets/" + id);
+            var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://brickin-it.herokuapp.com/api/sets/look-up-by/number/" + setNumer); // Create Http Request
             var response = await client.SendAsync(requestMessage);
 
             string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it 
@@ -112,8 +113,10 @@ namespace LegoMobile
             return setResponse;
         }
 
-        public async Task<bool> CreateSet(string name, string setNumber, string picture, string themeId)
+        public async Task<bool> CreateSet(string name, string setNumber, Stream picture, int themeId, string barcode)
         {
+            string pictureName = await UploadImage(picture);
+
             try
             {
                 var client = new HttpClient();
@@ -121,13 +124,14 @@ namespace LegoMobile
                 MultipartFormDataContent form = new MultipartFormDataContent(); // creating form and filling with data 
                 form.Add(new StringContent(name), "name");
                 form.Add(new StringContent(setNumber), "set_number");
-                form.Add(new StringContent(picture), "picture");
-                form.Add(new StringContent(themeId), "theme_id");
+                form.Add(new StringContent(pictureName), "picture");
+                form.Add(new StringContent(themeId.ToString()), "theme_id");
+                form.Add(new StringContent(barcode), "barcode");
 
-                var response = await client.PostAsync("https://brickin-it.herokuapp.com/api/set", form);
+                var response = await client.PostAsync("https://brickin-it.herokuapp.com/api/sets", form);// // sending the http response from brickin-it 
 
                 string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it 
-                Set setResponse = JsonConvert.DeserializeObject<Set>(content);// set responce
+                Set sets = JsonConvert.DeserializeObject<Set>(content);
 
                 return true;
             }
@@ -137,28 +141,33 @@ namespace LegoMobile
                 return false;
             }
         }
+        public async Task<string> UploadImage(Stream picture)
+        {
+            var client = new HttpClient();
+            MultipartFormDataContent form = new MultipartFormDataContent(); // creating form and filling with data 
+            form.Add(new StreamContent(picture), "file");
+
+            var response = await client.PostAsync("https://brickin-it.herokuapp.com/api/store-file", form);// // sending the http response from brickin-it 
+
+            string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it 
+            UserResponse userResponse = JsonConvert.DeserializeObject<UserResponse>(content);
+
+            return userResponse.file_name;
+        }
 
         public async Task<List<Collection>> ShowCollections()
         {
-            List<Collection> collectionList = new List<Collection>();
-
-            var client = new HttpClient(); /// get the client id 
+            var client = new HttpClient(); /// get the client id
 
             var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://brickin-it.herokuapp.com/api/collections");
             var response = await client.SendAsync(requestMessage);
 
-            string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it 
+            string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it
 
-            dynamic dynJson = JsonConvert.DeserializeObject(content);
-            foreach (var collection in dynJson)
-            {
-                if (collection.user_id == currentUser.Id)
-                {
-                    Collection newCollection = new Collection(collection.id, collection.name, collection.user_id);
-                    collectionList.Add(newCollection);
-                }
-            }
+            List<Collection> collectionList = JsonConvert.DeserializeObject<List<Collection>>(content);
+
             return collectionList;
         }
     }
 }
+

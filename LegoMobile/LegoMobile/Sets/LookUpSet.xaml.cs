@@ -16,16 +16,32 @@ namespace LegoMobile.NewFolder2
         {
             InitializeComponent();
         }
-        public async void APIFoundSet()
+        public async void APIFoundSet(Set APISet)
         {
-            FoundSet foundSet = new FoundSet();
-            await Navigation.PushModalAsync(foundSet);
+            if (APISet == null)
+            {
+                DisplayAlert("NO working");
+            }
+            else
+            {
+                FoundSet foundSet = new FoundSet(APISet);
+             
+                await Navigation.PushModalAsync(foundSet);
+            }
         }
 
-
-        private void FetchAPIButton_Clicked(object sender, EventArgs e)
+        private void DisplayAlert(string name)
         {
-            APIFoundSet();
+            throw new NotImplementedException();
+        }
+
+        private async void FetchAPIButton_Clicked(object sender, EventArgs e)
+        {
+            string setNumer = setEntryName.Text;
+            Set APISet = await ((App)Application.Current).API.ShowSet(setNumer);
+            
+            APIFoundSet(APISet);
+
         }
 
         public async void AddManuallyPage()

@@ -4,11 +4,10 @@
              x:Class="LegoMobile.NewFolder2.FoundSet">
     <ContentPage.Content>
         <StackLayout>
-            <Grid
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            Margin="10,5"
-           >
+            <Grid VerticalOptions="Center" 
+                  HorizontalOptions="Center" 
+                  Margin="10,5">
+
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -24,16 +23,15 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Set Name: "
-                   Grid.Column="0"
-                   Grid.ColumnSpan="2"
-                   Grid.Row="1"
-                   FontSize="26"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"
-                   TextColor="Black"
-                   Margin ="0,0,0,0"
-                   
-            />
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       Grid.Row="1"
+                       FontSize="26"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       TextColor="Black"
+                       Margin ="0,0,0,0"/>
+
                 <Label Text=" Name"
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
@@ -43,6 +41,7 @@
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
+                   x:Name="fetchSetName"
             />
 
                 <Label Text="Set Number: "
@@ -55,7 +54,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Label Text=" Number "
+                <Label Text=" Set Number "
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
                    Grid.Row="2"
@@ -64,8 +63,9 @@
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
+                  x:Name="fetchSetNumber"
             />
-                <Label Text="Age Range:"
+                <Label Text="Picture:"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Grid.Row="3"
@@ -75,7 +75,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Label Text=" Range "
+                <Label Text="  Picture "
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
                    Grid.Row="3"
@@ -84,67 +84,53 @@
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
+                   x:Name="fetchPicture"
             />
-                <Label Text="Number of Pieces:"
+                <Label Text="Theme Id:"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Grid.Row="4"
-                   FontSize="26"
+                   FontSize="22"
                    VerticalTextAlignment="Center"
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Label Text="Number of Pieces  "
+                <Label Text="theme id"
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
                    Grid.Row="4"
-                   FontSize="26"
+                   FontSize="22"
                    VerticalTextAlignment="Center"
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
-            />
-                <Label Text="Dimensions:"
-                   Grid.Column="0"
-                   Grid.ColumnSpan="2"
-                   Grid.Row="5"
-                   FontSize="26"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"
-                   TextColor="Black"
-                   Margin ="0,0,0,0"
-            />
-                <Label Text="Dimensions"
-                   Grid.Column="2"
-                   Grid.ColumnSpan="2"
-                   Grid.Row="5"
-                   FontSize="26"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"
-                   TextColor="Black"
-                   Margin ="0,0,0,0"
-
+                   x:Name="fetchthemeId"
             />
                 <Label Text="Barcode:"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
-                   Grid.Row="6"
+                   Grid.Row="5"
                    FontSize="26"
                    VerticalTextAlignment="Center"
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Label Text="Barcode"
+                <Label Text="barcode"
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
-                   Grid.Row="6"
+                   Grid.Row="5"
                    FontSize="26"
                    VerticalTextAlignment="Center"
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
+                   x:Name="fetchBarcode"
+                       
+                
+
+           
             />
             </Grid>
         </StackLayout>
