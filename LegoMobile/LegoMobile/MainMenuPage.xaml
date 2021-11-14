@@ -3,47 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LegoMobile.MainMenuPage">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout                 
+        <StackLayout                 
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 WidthRequest="300">
-                <Button    
+            <Button    
                     CornerRadius="25"
                     Text="Look up Set"
                     BackgroundColor="#035a91" 
-                    TextColor="Black"
+                    TextColor="White"
                     Margin="0,0,0,25"
                     x:Name="LookUpSetButton"
                     Clicked="LookUpSetButton_Clicked">
-                </Button>
-                <Button    
+            </Button>
+            <Button    
                     CornerRadius="25"
                     Text="Look up Theams "
                     BackgroundColor="#035a91" 
-                    TextColor="Black"
+                    TextColor="White"
                     Margin="0,25,0,75">
-                </Button>
-                <Button    
+            </Button>
+            <Button    
                     CornerRadius="25"
                     Text="View Collections "
                     BackgroundColor="#035a91" 
-                    TextColor="Black"
+                    TextColor="White"
                     Margin="0,75,0,25"
                     x:Name="ViewCollectionsButton"
                     Clicked="ViewCollectionsButton_Clicked">
-                </Button>
-                <Button    
+            </Button>
+            <Button    
                     CornerRadius="25"
-                    Text="View Whishlists"
+                    Text="Barcode Scanner"
                     BackgroundColor="#035a91" 
-                    TextColor="Black"
+                    TextColor="White"
                     Margin="0,25,0,0"
-                    x:Name="ViewWhishlistsButton"
-                    Clicked="ViewWhishlistsButton_Clicked">
-                </Button>
+                    x:Name="BarcodeButton"
+                    Clicked="BarcodeButton_Clicked">
+            </Button>
 
-            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

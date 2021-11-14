@@ -1,0 +1,8 @@
+C:\Users\patri\source\repos\LegoMobile\LegoMobile\LegoMobile.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\patri\source\repos\LegoMobile\LegoMobile\LegoMobile.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\patri\source\repos\LegoMobile\LegoMobile\LegoMobile.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\patri\source\repos\LegoMobile\LegoMobile\LegoMobile.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\patri\source\repos\LegoMobile\LegoMobile\LegoMobile.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\patri\source\repos\LegoMobile\LegoMobile\LegoMobile.iOS\obj\iPhone\Debug\optimized\
+C:\Users\patri\source\repos\LegoMobile\LegoMobile\LegoMobile.iOS\obj\iPhone\Debug\LegoMobile.iOS.csproj.AssemblyReference.cache
+C:\Users\patri\source\repos\LegoMobile\LegoMobile\LegoMobile.iOS\obj\iPhone\Debug\LegoMobile.iOS.csproj.CoreCompileInputs.cache

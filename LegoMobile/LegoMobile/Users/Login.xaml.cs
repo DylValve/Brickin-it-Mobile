@@ -16,5 +16,27 @@ namespace LegoMobile.Users
         {
             InitializeComponent();
         }
+
+        private async void LoginButton_Clicked(object sender, EventArgs e)
+        {
+            string emailEntry = EmailEntry.Text.ToLower();
+            string passwordEntry = PasswordEntry.Text;
+            bool success = await ((App)Application.Current).API.LoginRequest(emailEntry, passwordEntry);
+
+            if (success)
+            {
+                Console.WriteLine("Login");
+                MainPage();
+            }
+            else
+            {
+                Console.WriteLine("Entry Denied");
+            }
+        }
+
+        public async void MainPage()
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }

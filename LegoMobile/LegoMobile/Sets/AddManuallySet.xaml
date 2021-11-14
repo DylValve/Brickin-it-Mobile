@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LegoMobile.Sets.AddManuallySet">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid VerticalOptions="Center" 
+                  HorizontalOptions="Center" 
+                  Margin="10,5">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Set Name: "
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="1"
+                   FontSize="26"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin ="0,0,0,0"
+                   
+                   
+            />
+                <Entry Placeholder=" Name"
+                   Grid.Column="2"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="1"
+                   FontSize="26"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin ="0,0,0,0"
+                   x:Name="AddSetName"
+            />
+
+                <Label Text="Set Number: "
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="2"
+                   FontSize="26"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin ="0,0,0,0"
+            />
+                <Entry Placeholder=" Set Number "
+                   Grid.Column="2"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="2"
+                   FontSize="26"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin ="0,0,0,0"
+                  x:Name="AddSetNumber"
+            />
+                <Label Text="Picture:"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="3"
+                   FontSize="26"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin ="0,0,0,0"
+            />
+                <Button Text="Get Image"
+                        Grid.Column="2"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="3"
+                        FontSize="26"
+                        TextColor="Black"
+                        Margin ="0,0,0,0"
+                        x:Name="OnPickPhotoButton"
+                        Clicked="OnPickPhotoButton_Clicked"/>
+
+                <Label Text="Theme Id:"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="4"
+                   FontSize="22"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin ="0,0,0,0"
+            />
+                <Entry Placeholder="theme id"
+                   Grid.Column="2"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="4"
+                   FontSize="22"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin ="0,0,0,0"
+                   x:Name="AddthemeId"
+            />
+                <Label Text="Barcode:"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="5"
+                   FontSize="26"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin ="0,0,0,0"
+            />
+                <Entry Placeholder="barcode"
+                   Grid.Column="2"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="5"
+                   FontSize="26"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin ="0,0,0,0"
+                   x:Name="AddBarcode"
+
+            />
+
+
+            </Grid>
+            <Button Text="Add Set"
+                WidthRequest="300"
+                FontSize="26"
+                CornerRadius="25"
+                Margin="20"
+                BackgroundColor="#55a349"
+                x:Name="AddSetButton" 
+                Clicked="AddSetButton_Clicked">
+
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
