@@ -168,5 +168,30 @@ namespace LegoMobile
 
             return collectionList;
         }
+
+        public async Task<bool> CreateCollections(string name)
+        {
+            //string pictureName = await UploadImage(picture);
+
+            try
+            {
+                var client = new HttpClient();
+
+                MultipartFormDataContent form = new MultipartFormDataContent(); // creating form and filling with data 
+                form.Add(new StringContent(name), "name");
+                form.Add(new StringContent(currentUser.Id.ToString()), "user_id");
+                var response = await client.PostAsync("https://brickin-it.herokuapp.com/api/collections", form);// // sending the http response from brickin-it 
+
+                string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it 
+                Collections.Collection collection = JsonConvert.DeserializeObject<Collections.Collection>(content);
+                //Sets.Set sets = JsonConvert.DeserializeObject<Sets.Set>(content);
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return false;
+            }
+        }
     }
 }

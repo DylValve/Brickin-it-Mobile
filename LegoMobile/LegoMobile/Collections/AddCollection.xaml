@@ -17,18 +17,22 @@
             <!-- Place new controls here -->
             <StackLayout>
                 <Entry
-                Placeholder="Name of Collection"
-                 FontSize="22"
-                HorizontalTextAlignment="Center">
-
+                    Placeholder="Name of Collection"
+                    FontSize="22"
+                    HorizontalTextAlignment="Center"
+                    x:Name="CollectionName"
+                    >
                 </Entry>
                 <Button    
-                CornerRadius="25"
-                Text="Add Collection"
-                FontSize="Body"
-                BackgroundColor="#55a349" 
-                TextColor="Black"
-                Margin="0,75,0,0">
+                    CornerRadius="25"
+                    Text="Add Collection"
+                    FontSize="Body"
+                    BackgroundColor="#55a349" 
+                    TextColor="Black"
+                    Margin="0,75,0,0"
+                    x:Name="CollectionAddButton"
+                    Clicked="CollectionAddButton_Clicked"
+                    >
                 </Button>
             </StackLayout>
         </StackLayout>
