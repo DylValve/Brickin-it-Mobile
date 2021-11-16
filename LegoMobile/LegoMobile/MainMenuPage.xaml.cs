@@ -29,9 +29,9 @@ namespace LegoMobile
 
         public async void ViewAllCollections()
         {
+            List<Collections.Collection> collections = await ((App)Application.Current).API.ShowCollections();
             Collections.ViewAllCollections viewCollections = new Collections.ViewAllCollections();
             await Navigation.PushModalAsync(viewCollections);
-
         }
         private void ViewCollectionsButton_Clicked(object sender, EventArgs e)
         {

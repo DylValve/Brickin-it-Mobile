@@ -9,7 +9,6 @@ namespace LegoMobile
         public bool success { get; set; }
         public Data data { get; set; }
         public string message { get; set; }
-        public string file { get; set; }
         public string file_name { get; set; }
 
         public class Data

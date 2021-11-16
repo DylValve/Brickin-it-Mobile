@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "igV7gGuwgkzcrjM5Rs8WrnZhwj5gFEkCKEScYRl2aqQv98N6GAm/hEkBxf9wigrUioR2Pc1RIpO6ODw6NcFXUg==",
+  "dgSpecHash": "g1nPp7LV8GSvDMJ95/NVJACiz5rg51LwbIgtmdF+WnQtCmbT+uwOCpqK8PuZ+e/5BWuh5jiy8+PzmG921M/EpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\patri\\source\\repos\\LegoMobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
+  "projectFilePath": "C:\\Users\\patri\\Documents\\GitHub\\test\\Brickin-it-Mobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patri\\.nuget\\packages\\fastandroidcamera\\2.0.0\\fastandroidcamera.2.0.0.nupkg.sha512",
     "C:\\Users\\patri\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",

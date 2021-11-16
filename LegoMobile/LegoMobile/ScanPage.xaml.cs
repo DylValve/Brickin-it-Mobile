@@ -14,6 +14,7 @@ namespace LegoMobile
     public partial class ScanPage : ContentPage
     {
         public string barcodeValue;
+
         public ScanPage()
         {
             InitializeComponent();

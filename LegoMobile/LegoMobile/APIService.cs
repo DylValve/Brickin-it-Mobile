@@ -145,7 +145,7 @@ namespace LegoMobile
         {
             var client = new HttpClient();
             MultipartFormDataContent form = new MultipartFormDataContent(); // creating form and filling with data 
-            form.Add(new StreamContent(picture), "file");
+            form.Add(new StreamContent(picture), "file", "photo");
 
             var response = await client.PostAsync("https://brickin-it.herokuapp.com/api/store-file", form);// // sending the http response from brickin-it 
 
@@ -159,7 +159,7 @@ namespace LegoMobile
         {
             var client = new HttpClient(); /// get the client id
 
-            var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://brickin-it.herokuapp.com/api/collections");
+            var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://brickin-it.herokuapp.com/api/collections/user/" + currentUser.Id);
             var response = await client.SendAsync(requestMessage);
 
             string content = await response.Content.ReadAsStringAsync();// getting the http response from brickin-it

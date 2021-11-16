@@ -2493,11 +2493,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patri\\source\\repos\\LegoMobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
+      "projectUniqueName": "C:\\Users\\patri\\Documents\\GitHub\\test\\Brickin-it-Mobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
       "projectName": "LegoMobile.Android",
-      "projectPath": "C:\\Users\\patri\\source\\repos\\LegoMobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
+      "projectPath": "C:\\Users\\patri\\Documents\\GitHub\\test\\Brickin-it-Mobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
       "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patri\\source\\repos\\LegoMobile\\LegoMobile\\LegoMobile.Android\\obj\\",
+      "outputPath": "C:\\Users\\patri\\Documents\\GitHub\\test\\Brickin-it-Mobile\\LegoMobile\\LegoMobile.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2520,8 +2520,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\patri\\source\\repos\\LegoMobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj": {
-              "projectPath": "C:\\Users\\patri\\source\\repos\\LegoMobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj"
+            "C:\\Users\\patri\\Documents\\GitHub\\test\\Brickin-it-Mobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj": {
+              "projectPath": "C:\\Users\\patri\\Documents\\GitHub\\test\\Brickin-it-Mobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q1TfCKPz5AO5QO79H09MZFj9jLmhlIRlpx2AnJEiMat5w15ed2cyO87ckxsFpCiGTtW7XoUMyfoulXXt8xU/Mg==",
+  "dgSpecHash": "XTcyOEtiEhjjmmunSK4HHcigdNOKxhw6MB5dvIGedtm40XME+Gk1r2LUFDRm7TaWlKY6korhgCRGMdLWTl6Ytg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\patri\\source\\repos\\LegoMobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj",
+  "projectFilePath": "C:\\Users\\patri\\Documents\\GitHub\\test\\Brickin-it-Mobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patri\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
