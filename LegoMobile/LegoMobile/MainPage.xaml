@@ -5,13 +5,9 @@
 
     <StackLayout>
 
-        <Image Source="logo-social-sq.png"/>
+        <Image Source="https://brickin-it.herokuapp.com/images/Brickin-It.png"/>
         <!-- Place new controls here  -->
-        <Label Text="Brinkin it"
-               FontAttributes="Bold"
-               FontSize="48"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand"/>
+
         <StackLayout
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
@@ -19,8 +15,8 @@
             <Button
                 CornerRadius="25"
                 Text="Login"
-                BackgroundColor="#035a91" 
-                TextColor="White"                     
+                BackgroundColor="#E3000B" 
+                TextColor="White"                 
                 Margin="20"
                 FontSize="26"
                 x:Name="LoginButton" 
@@ -30,7 +26,7 @@
             <Button
                 CornerRadius="25"
                 Text="Sign Up"
-                BackgroundColor="#035a91" 
+                BackgroundColor="#E3000B" 
                 TextColor="White"
                 Margin="20"
                 FontSize="26"
@@ -41,7 +37,7 @@
             <Button
                 CornerRadius="25"
                 Text="Main Menu" 
-                BackgroundColor="#035a91" 
+                BackgroundColor="#E3000B" 
                 TextColor="White"
                 Margin="20"
                 FontSize="26"
@@ -52,7 +48,7 @@
             <Button
                 CornerRadius="25"
                 Text="Log Out"
-                BackgroundColor="#035a91" 
+                BackgroundColor="#E3000B" 
                 TextColor="White"
                 Margin="20"
                 FontSize="26"

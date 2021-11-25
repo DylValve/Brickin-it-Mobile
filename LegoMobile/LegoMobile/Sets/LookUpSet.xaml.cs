@@ -20,7 +20,11 @@ namespace LegoMobile.Sets
         {
             if (APISet == null)
             {
-                DisplayAlert("NO working");
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    await DisplayAlert("Alert", "Set not found", "OK");
+                    return;
+                });
             }
             else
             {
@@ -30,18 +34,36 @@ namespace LegoMobile.Sets
             }
         }
 
-        private void DisplayAlert(string name)
-        {
-            throw new NotImplementedException();
-        }
+
 
         private async void FetchAPIButton_Clicked(object sender, EventArgs e)
         {
-            string setNumer = setEntryName.Text;
-            Set APISet = await ((App)Application.Current).API.ShowSet(setNumer);
+            try
+            {
+                string setNumer = setEntryName.Text;
+                if (setEntryName.Text == null)
+                {
+                    Device.BeginInvokeOnMainThread(async () =>
+                    {
+                        await DisplayAlert("Alert", "Set not found.", "OK");
+                        return;
+                    });
+                }
+                else
+                {
+                    Set APISet = await ((App)Application.Current).API.ShowSet(setNumer);
 
-            APIFoundSet(APISet);
-
+                    APIFoundSet(APISet);
+                }
+            }
+            catch (Exception exc)
+            {
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    await DisplayAlert("Alert", "Set not found.", "OK");
+                    return;
+                });
+            }
         }
 
         public async void AddManuallyPage()
@@ -58,6 +80,11 @@ namespace LegoMobile.Sets
         private void ScanBarcodeButton_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Alert", "Set not Found", "OK");
+        }
+
+        private async void backArrow_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }

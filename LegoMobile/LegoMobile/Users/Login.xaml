@@ -7,7 +7,7 @@
             <StackLayout                 
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
-                WidthRequest="300">
+                WidthRequest="400">
                 <Entry    
                     x:Name="EmailEntry"
                     VerticalOptions="CenterAndExpand"
@@ -22,7 +22,8 @@
                     HorizontalOptions="Center"
                     Placeholder="Password"
                     Margin="0, 15, 0, 0"
-                    WidthRequest="300">
+                    WidthRequest="300"
+                    IsPassword="True">
                 </Entry>
             </StackLayout>
             <StackLayout                 
@@ -33,7 +34,7 @@
                     x:Name="LoginButton"
                     CornerRadius="25"
                     Text="Login"
-                    BackgroundColor="#035a91" 
+                    BackgroundColor="#E3000B" 
                     TextColor="White"
                     Clicked="LoginButton_Clicked">
                 </Button>

@@ -29,7 +29,6 @@ namespace LegoMobile
 
         public async void ViewAllCollections()
         {
-            List<Collections.Collection> collections = await ((App)Application.Current).API.ShowCollections();
             Collections.ViewAllCollections viewCollections = new Collections.ViewAllCollections();
             await Navigation.PushModalAsync(viewCollections);
         }
@@ -45,8 +44,14 @@ namespace LegoMobile
 
         public async void ScanPage()
         {
-            ScanPage scanPage = new ScanPage();
+            Sets.Set set = new Sets.Set();
+            ScanPage scanPage = new ScanPage(set);
             await Navigation.PushModalAsync(scanPage);
+        }
+
+        private async void backArrow_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }

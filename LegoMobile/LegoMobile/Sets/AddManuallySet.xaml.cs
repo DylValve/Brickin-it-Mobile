@@ -16,6 +16,7 @@ namespace LegoMobile.Sets
     {
         Stream imageSource;
         string barcodeNum;
+        Set newSet = new Set();
         public AddManuallySet()
         {
             InitializeComponent();
@@ -24,15 +25,28 @@ namespace LegoMobile.Sets
 
         private async void AddSetButton_Clicked(object sender, EventArgs e)
         {
-            string setName = AddSetName.Text;
-            string setNumber = AddSetNumber.Text;
-            Stream picture = imageSource;
-            int themeId = Convert.ToInt32(AddthemeId.Text);
-            string barcode = barcodeNum;
-            await ((App)Application.Current).API.CreateSet(setName, setNumber, picture, themeId, barcode);
+            try
+            {
+                newSet.Name = AddSetName.Text;
+                newSet.SetNumber = AddSetNumber.Text;
 
-            LookUpSet LookUpSet = new LookUpSet();
-            await Navigation.PushModalAsync(LookUpSet);
+                Stream picture = imageSource;
+
+                newSet.themeId = Convert.ToInt32(AddthemeId.Text);
+
+                await ((App)Application.Current).API.CreateSet(newSet.Name, newSet.SetNumber, picture, newSet.themeId, newSet.Barcode);
+
+                await Navigation.PopModalAsync();
+            }
+            catch (Exception exc)
+            {
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    Console.WriteLine(exc);
+
+                    await DisplayAlert("Invalid Values", "Please fill all the information", "OK");
+                });
+            }
         }
 
         private async void OnPickPhotoButton_Clicked(object sender, EventArgs e)
@@ -46,37 +60,35 @@ namespace LegoMobile.Sets
             imageSource = await result.OpenReadAsync();
             */
 
-            var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
+            
+            try
             {
-                Title = "Please Pick a Photo"
-            });
+                var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
+                {
+                    Title = "Please Pick a Photo"
+                });
 
-            imageSource = await result.OpenReadAsync();
+                if (result != null)
+                {
+                    imageSource = await result.OpenReadAsync();
+                }
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine(exc);
+            }
+            
         }
 
         private async void BarcodeButton_Clicked(object sender, EventArgs e)
         {
-            BarcodeScanner.IsVisible = true;
-            AddSetMenu.IsVisible = false;
-
-            await delay();
+            ScanPage scanPage = new ScanPage(newSet);
+            await Navigation.PushModalAsync(scanPage);
         }
 
-        public void scanView_OnScanResult(Result result)
+        private async void backArrow_Clicked(object sender, EventArgs e)
         {
-            barcodeNum = result.Text;
-
-            Device.BeginInvokeOnMainThread(async () =>
-            {
-                await DisplayAlert("Scanned result", "The barcode's text is " + result.Text + ". The barcode's format is " + result.BarcodeFormat, "OK");
-            });
-        }
-
-        public async Task delay()
-        {
-            await Task.Delay(3000);
-            AddSetMenu.IsVisible = true;
-            BarcodeScanner.IsVisible = false;
+            await Navigation.PopModalAsync();
         }
     }
 }

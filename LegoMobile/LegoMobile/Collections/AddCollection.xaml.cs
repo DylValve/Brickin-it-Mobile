@@ -16,5 +16,25 @@ namespace LegoMobile.Collections
         {
             InitializeComponent();
         }
+
+        private async void CollectionAddButton_Clicked(object sender, EventArgs e)
+        {
+            string collectionName = CollectionName.Text;
+
+            await ((App)Application.Current).API.CreateCollections(collectionName);
+
+            ViewAllCollections();
+        }
+
+
+        public async void ViewAllCollections()
+        {
+            await Navigation.PopModalAsync();
+        }
+
+        private async void backArrow_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }
