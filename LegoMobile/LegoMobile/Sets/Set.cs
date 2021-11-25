@@ -14,6 +14,12 @@ namespace LegoMobile.Sets
 
         public string Barcode { get; set; }
 
+
+        public Set()
+        {
+
+        }
+
         public Set(int id, string name, string set_number, string picture, int theme_id, string barcode)
         {
             Id = id;

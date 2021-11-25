@@ -3,33 +3,86 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LegoMobile.Collections.AddCollection">
     <ContentPage.Content>
-        <StackLayout
-        VerticalOptions="Center"
-        HorizontalOptions="Center"
-        WidthRequest="300">
-            <Label Text="Add Collection"
-                   FontAttributes="Bold"
-                   FontSize="40"
-                   HorizontalOptions="Center"
-                   VerticalOptions="CenterAndExpand"
-                    Margin="0,0,0,100">
-            </Label>
-            <!-- Place new controls here -->
+        <StackLayout>
             <StackLayout>
-                <Entry
-                Placeholder="Name of Collection"
-                 FontSize="22"
-                HorizontalTextAlignment="Center">
+                <Grid
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="#0796f1"
+                >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="←"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="1"
+                                Grid.Row="0"
+                                TextColor="White"
+                                FontSize="20"
+                                FontAttributes="Bold"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                                Padding="10"
+                                BackgroundColor="#f2b705"        
+                                CornerRadius="25"
+                                MinimumWidthRequest="1"
+                                Margin="10"
+                                x:Name="backArrow"
+                                Clicked="backArrow_Clicked"
+                            />
+                    <Label Text="Brickin'It"
+                               Grid.Column="1"
+                               Grid.ColumnSpan="1"
+                               Grid.Row="0"
+                               FontSize="Medium"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               VerticalTextAlignment="Center"
+                               TextColor="White"
+                               Margin="10"
+                           />
+                    <Label Text=""
+                           Grid.Column="2"
+                           Grid.ColumnSpan="1"
+                           Grid.Row="0"
+                    />
+                </Grid>
+            </StackLayout>
+            <StackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            WidthRequest="400">
+                <Label Text="Add Collection"
+                       FontAttributes="Bold"
+                       FontSize="40"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                        Margin="0,0,0,100">
+                </Label>
+                <!-- Place new controls here -->
+                <StackLayout>
+                    <Entry Placeholder="Name of Collection"
+                           FontSize="22"
+                           HorizontalTextAlignment="Center"
+                           x:Name="CollectionName">
 
-                </Entry>
-                <Button    
-                CornerRadius="25"
-                Text="Add Collection"
-                FontSize="Body"
-                BackgroundColor="#55a349" 
-                TextColor="Black"
-                Margin="0,75,0,0">
-                </Button>
+                    </Entry>
+                    <Button CornerRadius="25"
+                            Text="Add Collection"
+                            FontSize="Body"
+                            BackgroundColor="#55a349" 
+                            TextColor="Black"
+                            Margin="0,75,0,0"
+                            x:Name="CollectionAddButton"
+                            Clicked="CollectionAddButton_Clicked">
+
+                    </Button>
+                </StackLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

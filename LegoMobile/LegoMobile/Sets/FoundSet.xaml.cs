@@ -12,9 +12,13 @@ namespace LegoMobile.Sets
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FoundSet : ContentPage
     {
+        Set set;
         public FoundSet(Set APISet)
         {
             InitializeComponent();
+
+            set = APISet;
+
             FillTextBoxes(APISet);
         }
 
@@ -22,9 +26,21 @@ namespace LegoMobile.Sets
         {
             fetchSetName.Text = APISet.Name;
             fetchSetNumber.Text = APISet.SetNumber;
-            fetchPicture.Text = APISet.Picture;
+            SetImage.Source = "https://brickin-it.herokuapp.com/images/" + APISet.Picture;
             fetchthemeId.Text = APISet.themeId.ToString();
             fetchBarcode.Text = APISet.Barcode;
+        }
+
+        private async void DeleteSetButton_Clicked(object sender, EventArgs e)
+        {
+            await((App)Application.Current).API.DeleteSet(set.Id.ToString());
+
+            await Navigation.PopModalAsync();
+        }
+
+        private async void backArrow_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }

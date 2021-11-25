@@ -56,3 +56,172 @@ C:\Users\patri\Documents\GitHub\test\Brickin-it-Mobile\LegoMobile\LegoMobile\obj
 C:\Users\patri\Documents\GitHub\test\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.dll
 C:\Users\patri\Documents\GitHub\test\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ref\LegoMobile.dll
 C:\Users\patri\Documents\GitHub\test\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.pdb
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.deps.json
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.dll
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\ref\LegoMobile.dll
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.pdb
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csproj.AssemblyReference.cache
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddCollection.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionAddManuallySet.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionFoundSet.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionLookUpSet.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewAllCollections.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollection.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollectionSet.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainMenuPage.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ScanPage.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\AddManuallySet.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\FoundSet.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\LookUpSet.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\Login.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\SignUp.xaml.g.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfoInputs.cache
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfo.cs
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csproj.CoreCompileInputs.cache
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.dll
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ref\LegoMobile.dll
+C:\Users\patri\source\repos\n\17-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.pdb
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.deps.json
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.dll
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\ref\LegoMobile.dll
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.pdb
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.GeneratedMSBuildEditorConfig.editorconfig
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddCollection.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionAddManuallySet.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionFoundSet.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionLookUpSet.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewAllCollections.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollection.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollectionSet.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainMenuPage.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ScanPage.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\AddManuallySet.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\FoundSet.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\LookUpSet.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\Login.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\SignUp.xaml.g.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfoInputs.cache
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfo.cs
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csproj.CoreCompileInputs.cache
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\XamlC.stamp
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.dll
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ref\LegoMobile.dll
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.pdb
+P:\vs\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csproj.AssemblyReference.cache
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.deps.json
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.dll
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\ref\LegoMobile.dll
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.pdb
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csproj.AssemblyReference.cache
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddCollection.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionAddManuallySet.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionFoundSet.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionLookUpSet.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewAllCollections.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollection.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollectionSet.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainMenuPage.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ScanPage.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\AddManuallySet.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\FoundSet.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\LookUpSet.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\Login.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\SignUp.xaml.g.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfoInputs.cache
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfo.cs
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csproj.CoreCompileInputs.cache
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.dll
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ref\LegoMobile.dll
+C:\Users\soare\Desktop\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.pdb
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.deps.json
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.dll
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\ref\LegoMobile.dll
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.pdb
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csproj.AssemblyReference.cache
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.GeneratedMSBuildEditorConfig.editorconfig
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddCollection.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionAddManuallySet.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionFoundSet.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionLookUpSet.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewAllCollections.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollection.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollectionSet.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainMenuPage.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ScanPage.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\AddManuallySet.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\FoundSet.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\LookUpSet.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\Login.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\SignUp.xaml.g.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfoInputs.cache
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfo.cs
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csproj.CoreCompileInputs.cache
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\XamlC.stamp
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.dll
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ref\LegoMobile.dll
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.pdb
+P:\vs\one\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\PhotoPage.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csprojAssemblyReference.cache
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddCollection.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionAddManuallySet.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionFoundSet.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionLookUpSet.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewAllCollections.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollection.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollectionSet.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainMenuPage.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\PhotoPage.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ScanPage.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\AddManuallySet.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\FoundSet.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\LookUpSet.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\Login.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\SignUp.xaml.g.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfoInputs.cache
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfo.cs
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.dll
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ref\LegoMobile.dll
+C:\Users\20047221\source\repo\23-11-21-Brickin-it-Mobile\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.pdb
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddCollection.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionAddManuallySet.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionFoundSet.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionLookUpSet.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewAllCollections.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollection.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollectionSet.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainMenuPage.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\PhotoPage.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ScanPage.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\AddManuallySet.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\FoundSet.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\LookUpSet.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\Login.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\SignUp.xaml.g.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfoInputs.cache
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfo.cs
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csproj.CoreCompileInputs.cache
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.dll
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ref\LegoMobile.dll
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.pdb
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.deps.json
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.dll
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\ref\LegoMobile.dll
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.pdb
+C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\XamlC.stamp

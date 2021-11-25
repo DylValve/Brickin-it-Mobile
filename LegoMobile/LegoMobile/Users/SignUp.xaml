@@ -7,7 +7,7 @@
             <StackLayout                 
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
-                WidthRequest="300">
+                WidthRequest="400">
                 <Label
                     Text="Sign UP"                
                     FontAttributes="Bold"
@@ -38,7 +38,8 @@
                     HorizontalOptions="Center"
                     Placeholder="Password"
                     Margin="0, 15,0,15"
-                    WidthRequest="300">
+                    WidthRequest="300"
+                    IsPassword="True">
                 </Entry>
                 <Entry
                     x:Name="ConfirmPasswordEntry"
@@ -46,7 +47,8 @@
                     HorizontalOptions="Center"  
                     Placeholder="Confirm Password"
                     Margin="0, 15, 0, 0"
-                    WidthRequest="300">
+                    WidthRequest="300"
+                    IsPassword="True">
                 </Entry>
             </StackLayout>
             <StackLayout                 
@@ -57,7 +59,7 @@
                     x:Name="RegisterButton"
                     CornerRadius="25"
                     Text="Create Account"
-                    BackgroundColor="#035a91" 
+                    BackgroundColor="#E3000B" 
                     TextColor="White"
                     Clicked="RegisterButton_Clicked">
                 </Button>
