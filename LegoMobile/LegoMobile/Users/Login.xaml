@@ -4,11 +4,11 @@
              x:Class="LegoMobile.Users.Login">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout
+            <StackLayout                 
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 WidthRequest="400">
-                <Entry
+                <Entry    
                     x:Name="EmailEntry"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
@@ -26,7 +26,7 @@
                     IsPassword="True">
                 </Entry>
             </StackLayout>
-            <StackLayout
+            <StackLayout                 
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 WidthRequest="300">
@@ -34,7 +34,7 @@
                     x:Name="LoginButton"
                     CornerRadius="25"
                     Text="Login"
-                    BackgroundColor="#E3000B"
+                    BackgroundColor="#E3000B" 
                     TextColor="White"
                     Clicked="LoginButton_Clicked">
                 </Button>

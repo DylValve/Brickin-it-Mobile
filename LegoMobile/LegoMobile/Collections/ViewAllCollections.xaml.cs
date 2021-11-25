@@ -69,10 +69,10 @@ namespace LegoMobile.Collections
                     BackgroundColor = Color.FromHex("#f2b705"),
                     CornerRadius = 25,
                     Margin = 5
-                };
+                };             
                 collectionViewButton.Clicked += DynamicViewBtn_Clicked;
                 stack.Children.Add(collectionViewButton);
-
+                
                 Button DeleteButton = new Button()
                 {
                     Text = "Delete",
@@ -90,7 +90,7 @@ namespace LegoMobile.Collections
             }
         }
 
-
+        
 
         private async void DynamicDeleteBtn_Clicked(object sender, EventArgs e)
         {

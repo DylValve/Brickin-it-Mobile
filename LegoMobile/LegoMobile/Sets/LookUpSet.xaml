@@ -28,7 +28,7 @@
                                 HorizontalOptions="StartAndExpand"
                                 VerticalOptions="StartAndExpand"
                                 Padding="10"
-                                BackgroundColor="#f2b705"
+                                BackgroundColor="#f2b705"        
                                 CornerRadius="25"
                                 MinimumWidthRequest="1"
                                 Margin="10"
@@ -64,7 +64,7 @@
                    VerticalOptions="CenterAndExpand"
                    Margin="0,0,0,100">
                 </Label>
-                <Entry
+                <Entry    
                 Placeholder="Enter Set Number  " HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 TextColor="Black"
@@ -72,28 +72,28 @@
                 Margin="0,0,0,0"
                     x:Name="setEntryName">
                 </Entry>
-                <Button
+                <Button    
                 CornerRadius="25"
                 Text="Fetch "
-                BackgroundColor="#E3000B"
+                BackgroundColor="#E3000B" 
                 TextColor="White"
                 Margin="0,75,0,25"
                 x:Name="FetchAPIButton"
                 Clicked="FetchAPIButton_Clicked">
                 </Button>
-                <Button
+                <Button    
                 CornerRadius="25"
                 Text="Add Manually"
-                BackgroundColor="#E3000B"
+                BackgroundColor="#E3000B" 
                 TextColor="White"
                 Margin="0,0,0,25"
                     x:Name="AddManuallyButton"
                     Clicked="AddManuallyButton_Clicked">
                 </Button>
-                <Button
+                <Button    
                 CornerRadius="25"
                 Text="Scan Barcode"
-                BackgroundColor="#E3000B"
+                BackgroundColor="#E3000B" 
                 TextColor="White"
                 Margin="0,0,0,0"
                 x:Name="ScanBarcodeButton"

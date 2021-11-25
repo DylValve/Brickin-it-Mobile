@@ -28,7 +28,7 @@
                                 HorizontalOptions="StartAndExpand"
                                 VerticalOptions="StartAndExpand"
                                 Padding="10"
-                                BackgroundColor="#f2b705"
+                                BackgroundColor="#f2b705"        
                                 CornerRadius="25"
                                 MinimumWidthRequest="1"
                                 Margin="10"
@@ -81,7 +81,7 @@
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
-
+                   
             />
                     <Entry Placeholder=" Name"
                    Grid.Column="2"

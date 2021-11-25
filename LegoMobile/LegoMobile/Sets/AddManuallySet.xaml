@@ -33,7 +33,7 @@
                                 HorizontalOptions="StartAndExpand"
                                 VerticalOptions="StartAndExpand"
                                 Padding="10"
-                                BackgroundColor="#f2b705"
+                                BackgroundColor="#f2b705"        
                                 CornerRadius="25"
                                 MinimumWidthRequest="1"
                                 Margin="10"
@@ -59,8 +59,8 @@
                 </Grid>
             </StackLayout>
             <StackLayout x:Name="AddSetMenu">
-                <Grid VerticalOptions="Center"
-                      HorizontalOptions="Center"
+                <Grid VerticalOptions="Center" 
+                      HorizontalOptions="Center" 
                       Margin="10,5">
 
                     <Grid.RowDefinitions>
@@ -197,7 +197,7 @@
                         CornerRadius="25"
                         Margin="20"
                         BackgroundColor="#55a349"
-                        x:Name="AddSetButton"
+                        x:Name="AddSetButton" 
                         Clicked="AddSetButton_Clicked"
                         />
 
