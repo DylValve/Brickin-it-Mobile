@@ -18,8 +18,8 @@ namespace LegoMobile
         }
         public async void LookUpSetPage()
         {
-            NewFolder2.LookUpSet LookUpSet = new NewFolder2.LookUpSet();
-            await Navigation.PushModalAsync(LookUpSet);
+            Sets.LookUpSet lookUpSet = new Sets.LookUpSet();
+            await Navigation.PushModalAsync(lookUpSet);
         }
 
         private void LookUpSetButton_Clicked(object sender, EventArgs e)
@@ -29,18 +29,29 @@ namespace LegoMobile
 
         public async void ViewAllCollections()
         {
-            NewFolder1.ViewAllCollections viewCollections = new NewFolder1.ViewAllCollections();
+            Collections.ViewAllCollections viewCollections = new Collections.ViewAllCollections();
             await Navigation.PushModalAsync(viewCollections);
-
         }
         private void ViewCollectionsButton_Clicked(object sender, EventArgs e)
         {
             ViewAllCollections();
         }
 
-        private void ViewWhishlistsButton_Clicked(object sender, EventArgs e)
+        private void BarcodeButton_Clicked(object sender, EventArgs e)
         {
+            ScanPage();
+        }
 
+        public async void ScanPage()
+        {
+            Sets.Set set = new Sets.Set();
+            ScanPage scanPage = new ScanPage(set);
+            await Navigation.PushModalAsync(scanPage);
+        }
+
+        private async void backArrow_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }

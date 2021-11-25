@@ -1,29 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LegoMobile.NewFolder1.AddSetToCollection.CollectionAddManuallySet">
+             x:Class="LegoMobile.Collections.AddSetToCollection.CollectionAddManuallySet">
     <ContentPage.Content>
         <StackLayout>
-            <Grid
+            <StackLayout>
+                <Grid
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="#0796f1"
+                >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="←"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="1"
+                                Grid.Row="0"
+                                TextColor="White"
+                                FontSize="20"
+                                FontAttributes="Bold"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                                Padding="10"
+                                BackgroundColor="#f2b705"
+                                CornerRadius="25"
+                                MinimumWidthRequest="1"
+                                Margin="10"
+                                x:Name="backArrow"
+                            />
+                    <Label Text="Brickin'It"
+                               Grid.Column="1"
+                               Grid.ColumnSpan="1"
+                               Grid.Row="0"
+                               FontSize="Medium"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               VerticalTextAlignment="Center"
+                               TextColor="White"
+                               Margin="10"
+                           />
+                    <Label Text=""
+                           Grid.Column="2"
+                           Grid.ColumnSpan="1"
+                           Grid.Row="0"
+                    />
+                </Grid>
+            </StackLayout>
+            <StackLayout>
+                <Grid
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Margin="10,5"
            >
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                <Label Text="Set Name: "
+                    <Label Text="Set Name: "
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Grid.Row="1"
@@ -32,9 +81,9 @@
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    Margin ="0,0,0,0"
-                   
+
             />
-                <Entry Placeholder=" Name"
+                    <Entry Placeholder=" Name"
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
                    Grid.Row="1"
@@ -45,7 +94,7 @@
                    Margin ="0,0,0,0"
             />
 
-                <Label Text="Set Number: "
+                    <Label Text="Set Number: "
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Grid.Row="2"
@@ -55,7 +104,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Entry Placeholder=" Set Number "
+                    <Entry Placeholder=" Set Number "
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
                    Grid.Row="2"
@@ -65,7 +114,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Label Text="Age Range:"
+                    <Label Text="Age Range:"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Grid.Row="3"
@@ -75,7 +124,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Entry Placeholder="  Age Range "
+                    <Entry Placeholder="  Age Range "
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
                    Grid.Row="3"
@@ -85,7 +134,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Label Text="Number of Pieces:"
+                    <Label Text="Number of Pieces:"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Grid.Row="4"
@@ -95,7 +144,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Entry Placeholder="Number of Pieces"
+                    <Entry Placeholder="Number of Pieces"
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
                    Grid.Row="4"
@@ -105,7 +154,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Label Text="Dimensions:"
+                    <Label Text="Dimensions:"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Grid.Row="5"
@@ -115,7 +164,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Entry Placeholder="Dimensions"
+                    <Entry Placeholder="Dimensions"
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
                    Grid.Row="5"
@@ -126,7 +175,7 @@
                    Margin ="0,0,0,0"
 
             />
-                <Label Text="Barcode:"
+                    <Label Text="Barcode:"
                    Grid.Column="0"
                    Grid.ColumnSpan="2"
                    Grid.Row="6"
@@ -136,7 +185,7 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-                <Entry Placeholder="Barcode"
+                    <Entry Placeholder="Barcode"
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
                    Grid.Row="6"
@@ -146,13 +195,14 @@
                    TextColor="Black"
                    Margin ="0,0,0,0"
             />
-            </Grid>
-            <Button Text="Add Set"
+                </Grid>
+                <Button Text="Add Set"
                 WidthRequest="300"
                 FontSize="26"
                 CornerRadius="25"
                 Margin="20"
                 BackgroundColor="#55a349" ></Button>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace LegoMobile.NewFolder1.AddSetToCollection
+namespace LegoMobile.Collections.AddSetToCollection
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CollectionAddManuallySet : ContentPage

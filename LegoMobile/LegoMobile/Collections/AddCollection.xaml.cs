@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace LegoMobile.NewFolder1
+namespace LegoMobile.Collections
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddCollection : ContentPage
@@ -15,6 +15,26 @@ namespace LegoMobile.NewFolder1
         public AddCollection()
         {
             InitializeComponent();
+        }
+
+        private async void CollectionAddButton_Clicked(object sender, EventArgs e)
+        {
+            string collectionName = CollectionName.Text;
+
+            await ((App)Application.Current).API.CreateCollections(collectionName);
+
+            ViewAllCollections();
+        }
+
+
+        public async void ViewAllCollections()
+        {
+            await Navigation.PopModalAsync();
+        }
+
+        private async void backArrow_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }

@@ -7,44 +7,66 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace LegoMobile.NewFolder1.AddSetToCollection
+namespace LegoMobile.Collections.AddSetToCollection
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CollectionLookUpSet : ContentPage
     {
-        public CollectionLookUpSet()
+        string currentCollectionId;
+        public CollectionLookUpSet(string collectionId)
         {
             InitializeComponent();
+
+            currentCollectionId = collectionId;
         }
 
-        public async void CollectionAPIFoundSet()
+        public async void APIFoundSet(Sets.Set APISet)
         {
-            CollectionFoundSet collectionSetfoundSet = new CollectionFoundSet();
-            await Navigation.PushModalAsync(collectionSetfoundSet);
-        }
-        private void CollectionFetchAPIButton_Clicked(object sender, EventArgs e)
-        {
-            CollectionAPIFoundSet();
+            if (APISet == null)
+            {
+                DisplayAlert("NO working");
+            }
+            else
+            {
+                CollectionFoundSet foundSet = new CollectionFoundSet(APISet, currentCollectionId);
+
+                await Navigation.PushModalAsync(foundSet);
+            }
         }
 
-        public async void CollectionAddManuallyPage()
+        private void DisplayAlert(string name)
         {
-            CollectionAddManuallySet collectionfoundSet = new CollectionAddManuallySet();
-            await Navigation.PushModalAsync(collectionfoundSet);
+            throw new NotImplementedException();
         }
+
+        private async void CollectionFetchAPIButton_Clicked(object sender, EventArgs e)
+        {
+            string setNumer = setEntryNumber.Text;
+            Sets.Set APISet = await ((App)Application.Current).API.ShowSet(setNumer);
+
+            APIFoundSet(APISet);
+
+        }
+
+        public async void AddManuallyPage()
+        {
+            CollectionAddManuallySet addManuall = new CollectionAddManuallySet();
+            await Navigation.PushModalAsync(addManuall);
+        }
+
+
         private void CollectionAddManuallyButton_Clicked(object sender, EventArgs e)
         {
-            CollectionAddManuallyPage();
-        }
-
-        public async void CollectionScanBarcode()
-        {
-            CollectionAddManuallySet collectionfoundSet = new CollectionAddManuallySet();
-            await Navigation.PushModalAsync(collectionfoundSet);
+            AddManuallyPage();
         }
         private void CollectionScanBarcodeButton_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Alert", "Set not Found", "OK");
+        }
+
+        private async void backArrow_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }

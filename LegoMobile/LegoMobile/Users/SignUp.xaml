@@ -1,18 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
              x:Class="LegoMobile.Users.SignUp">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout                 
+            <StackLayout
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
-                WidthRequest="300">
+                WidthRequest="400">
                 <Label
-                    Text="Sign UP"                
+                    Text="Sign UP"
                     FontAttributes="Bold"
                     FontSize="30"
                     VerticalTextAlignment="Center"
@@ -20,7 +17,7 @@
                     WidthRequest="300">
                 </Label>
                 <Entry
-                    x:Name="Name"
+                    x:Name="NameEntry"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
                     Placeholder="Name"
@@ -28,7 +25,7 @@
                     WidthRequest="300">
                 </Entry>
                 <Entry
-                    x:Name="Email"
+                    x:Name="EmailEntry"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
                     Placeholder="Email"
@@ -36,31 +33,35 @@
                     WidthRequest="300">
                 </Entry>
                 <Entry
-                    x:Name="Password"
+                    x:Name="PasswordEntry"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
                     Placeholder="Password"
                     Margin="0, 15,0,15"
-                    WidthRequest="300">
+                    WidthRequest="300"
+                    IsPassword="True">
                 </Entry>
                 <Entry
-                    x:Name="ConfirmPassword"
+                    x:Name="ConfirmPasswordEntry"
                     VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="Center"  
+                    HorizontalOptions="Center"
                     Placeholder="Confirm Password"
                     Margin="0, 15, 0, 0"
-                    WidthRequest="300">
+                    WidthRequest="300"
+                    IsPassword="True">
                 </Entry>
             </StackLayout>
-            <StackLayout                 
+            <StackLayout
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 WidthRequest="300">
-                <Button    
+                <Button
+                    x:Name="RegisterButton"
                     CornerRadius="25"
                     Text="Create Account"
-                    BackgroundColor="#035a91" 
-                    TextColor="White">
+                    BackgroundColor="#E3000B"
+                    TextColor="White"
+                    Clicked="RegisterButton_Clicked">
                 </Button>
             </StackLayout>
         </StackLayout>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace LegoMobile.NewFolder2
+namespace LegoMobile.Sets
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LookUpSet : ContentPage
@@ -20,28 +20,50 @@ namespace LegoMobile.NewFolder2
         {
             if (APISet == null)
             {
-                DisplayAlert("NO working");
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    await DisplayAlert("Alert", "Set not found", "OK");
+                    return;
+                });
             }
             else
             {
                 FoundSet foundSet = new FoundSet(APISet);
-             
+
                 await Navigation.PushModalAsync(foundSet);
             }
         }
 
-        private void DisplayAlert(string name)
-        {
-            throw new NotImplementedException();
-        }
+
 
         private async void FetchAPIButton_Clicked(object sender, EventArgs e)
         {
-            string setNumer = setEntryName.Text;
-            Set APISet = await ((App)Application.Current).API.viewSet(setNumer);
-            
-            APIFoundSet(APISet);
+            try
+            {
+                string setNumer = setEntryName.Text;
+                if (setEntryName.Text == null)
+                {
+                    Device.BeginInvokeOnMainThread(async () =>
+                    {
+                        await DisplayAlert("Alert", "Set not found.", "OK");
+                        return;
+                    });
+                }
+                else
+                {
+                    Set APISet = await ((App)Application.Current).API.ShowSet(setNumer);
 
+                    APIFoundSet(APISet);
+                }
+            }
+            catch (Exception exc)
+            {
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    await DisplayAlert("Alert", "Set not found.", "OK");
+                    return;
+                });
+            }
         }
 
         public async void AddManuallyPage()
@@ -58,6 +80,11 @@ namespace LegoMobile.NewFolder2
         private void ScanBarcodeButton_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Alert", "Set not Found", "OK");
+        }
+
+        private async void backArrow_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }
