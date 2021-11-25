@@ -60,7 +60,7 @@ namespace LegoMobile.Sets
             imageSource = await result.OpenReadAsync();
             */
 
-            
+
             try
             {
                 var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
@@ -77,7 +77,7 @@ namespace LegoMobile.Sets
             {
                 Console.WriteLine(exc);
             }
-            
+
         }
 
         private async void BarcodeButton_Clicked(object sender, EventArgs e)

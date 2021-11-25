@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace LegoMobile.Users
 {
@@ -21,7 +25,7 @@ namespace LegoMobile.Users
         {
             string emailEntry = EmailEntry.Text.ToLower();
             string passwordEntry = PasswordEntry.Text;
-            //not picking up emails 
+            //not picking up emails
             if (EmailEntry.Text == null || PasswordEntry.Text == null)
             {
                 await DisplayAlert("Alert", "Missing one or more parameters", "OK");
