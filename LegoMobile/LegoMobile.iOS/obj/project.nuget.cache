@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "RTXEKlD3T0hObk5xVK5JSM+vJId6opvvUK4be9oontbp+yMjTTX6X1UA8d3wAUNawPweNmiBs+nMaq5klw4gFA==",
+  "dgSpecHash": "8IBby5nwc98KwFR1MKpm7e46XGG8OOnjVNWDqKiu4wXZgSgTEkdYDjTgG+i0U2yPRVhfkVarerodGUj6F9GkpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\patri\\Documents\\GitHub\\Brickin-it-Mobile\\LegoMobile\\LegoMobile.iOS\\LegoMobile.iOS.csproj",
+  "projectFilePath": "C:\\Users\\soare\\Source\\Repos\\Brickiit-Mobile\\LegoMobile\\LegoMobile.iOS\\LegoMobile.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\patri\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\patri\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\soare\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\soare\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
-    "C:\\Users\\patri\\.nuget\\packages\\zxing.net.mobile\\2.4.1\\zxing.net.mobile.2.4.1.nupkg.sha512",
-    "C:\\Users\\patri\\.nuget\\packages\\zxing.net.mobile.forms\\2.4.1\\zxing.net.mobile.forms.2.4.1.nupkg.sha512"
+    "C:\\Users\\soare\\.nuget\\packages\\zxing.net.mobile\\2.4.1\\zxing.net.mobile.2.4.1.nupkg.sha512",
+    "C:\\Users\\soare\\.nuget\\packages\\zxing.net.mobile.forms\\2.4.1\\zxing.net.mobile.forms.2.4.1.nupkg.sha512"
   ],
   "logs": [
     {

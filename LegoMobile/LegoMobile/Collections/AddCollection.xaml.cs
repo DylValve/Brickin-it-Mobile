@@ -26,15 +26,19 @@ namespace LegoMobile.Collections
             ViewAllCollections();
         }
 
-
+        /// <summary>
+        /// To allow the top bar back button to pop back to the previous page 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public async void ViewAllCollections()
         {
             await Navigation.PopModalAsync();
         }
 
-        private async void backArrow_Clicked(object sender, EventArgs e)
+        private void backArrow_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PopModalAsync();
+            ViewAllCollections();
         }
     }
 }

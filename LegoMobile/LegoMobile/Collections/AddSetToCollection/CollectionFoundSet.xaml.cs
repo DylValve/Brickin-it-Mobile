@@ -25,7 +25,10 @@ namespace LegoMobile.Collections.AddSetToCollection
 
             FillTextBoxes(APISet);
         }
-
+        /// <summary>
+        /// Fill all the labels with the information about the selected set 
+        /// </summary>
+        /// <param name="APISet"></param>
         void FillTextBoxes(Sets.Set APISet)
         {
             fetchSetName.Text = APISet.Name;
@@ -34,14 +37,22 @@ namespace LegoMobile.Collections.AddSetToCollection
             fetchthemeId.Text = APISet.themeId.ToString();
             fetchBarcode.Text = APISet.Barcode;
         }
-
+        /// <summary>
+        /// Will Add the found set to the collection 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void AddToCollectionButton_Clicked(object sender, EventArgs e)
         {
             await ((App)Application.Current).API.CreateSetInCollection(set.Id.ToString(), currentCollectionId);
 
             await Navigation.PopModalAsync();
         }
-
+        /// <summary>
+        /// To allow the top bar back button to pop back to the previous page 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void backArrow_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();
