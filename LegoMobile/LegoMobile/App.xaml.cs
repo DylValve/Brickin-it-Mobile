@@ -6,14 +6,15 @@ namespace LegoMobile
 {
     public partial class App : Application
     {
+        // references the API service
         public APIService API { get; set; }
 
         public App()
         {
             InitializeComponent();
-
+            // creates new reference of API service
             API = new APIService();
-
+            // creates new reference of main page
             MainPage = new MainPage();
         }
 

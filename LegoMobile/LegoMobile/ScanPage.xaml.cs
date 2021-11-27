@@ -15,21 +15,25 @@ namespace LegoMobile
     {
         public string barcodeValue;
 
-        Sets.Set newSet;
+        Sets.Set newSet; 
         public ScanPage(Sets.Set set)
         {
             InitializeComponent();
 
-            newSet = set;
+            newSet = set; // Makes the newSet value equal the set reference
         }
 
+        /// <summary>
+        /// Scans a barcode and gets the information from it
+        /// </summary>
+        /// <param name="result"></param>
         public void scanView_OnScanResult(Result result)
         {
-            newSet.Barcode = result.Text;
+            newSet.Barcode = result.Text; // Gets the barcode scan result number
 
             Device.BeginInvokeOnMainThread(async () =>
             {
-                await DisplayAlert("Scanned result", "The barcode's text is " + result.Text + ". The barcode's format is " + result.BarcodeFormat, "OK");
+                await DisplayAlert("Scanned result", "The barcode's text is " + result.Text + ". The barcode's format is " + result.BarcodeFormat, "OK"); // Displays alert about the scanned barcode
                 await Navigation.PopModalAsync();
             });
         }

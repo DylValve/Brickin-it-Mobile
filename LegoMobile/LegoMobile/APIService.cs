@@ -16,9 +16,14 @@ namespace LegoMobile
 
         public bool loggedIn;
 
+
+
         /// <summary>
-        /// This code fetches the API
+        /// This code fetches the API respose of LoginRequest
         /// </summary>
+        /// <param name="email"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public async Task<bool> LoginRequest(string email, string password)
         {
             try
@@ -53,6 +58,15 @@ namespace LegoMobile
             }
         }
 
+
+        /// <summary>
+        /// This code fetches the API respose of RegisterRequest
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="email"></param>
+        /// <param name="password"></param>
+        /// <param name="confirm_password"></param>
+        /// <returns></returns>
         public async Task<bool> RegisterRequest(string name, string email, string password, string confirm_password)
         {
             try
@@ -89,6 +103,11 @@ namespace LegoMobile
             }
         }
 
+
+        /// <summary>
+        /// This code fetches the API respose of LogoutRequest
+        /// </summary>
+        /// <returns></returns>
         public async Task<bool> LogoutRequest()
         {
             try
@@ -122,7 +141,11 @@ namespace LegoMobile
             }
         }
 
-        /// Sets
+        /// <summary>
+        /// This code fetches the API respose of ShowSet
+        /// </summary>
+        /// <param name="setNumer"></param>
+        /// <returns></returns>
         public async Task<Sets.Set> ShowSet(string setNumer)
         {
             var client = new HttpClient(); /// get the client id 
@@ -140,6 +163,11 @@ namespace LegoMobile
             return setResponse;
         }
 
+        /// <summary>
+        /// This code fetches the API respose of ShowCollection
+        /// </summary>
+        /// <param name="collectionNumber"></param>
+        /// <returns></returns>
         public async Task<Collections.Collection> ShowCollection(string collectionNumber)
         {
             var client = new HttpClient(); /// get the client id 
@@ -153,6 +181,11 @@ namespace LegoMobile
             return collectionResponse;
         }
 
+        /// <summary>
+        /// This code fetches the API respose of ShowSetBarcode
+        /// </summary>
+        /// <param name="barcode"></param>
+        /// <returns></returns>
         public async Task<Sets.Set> ShowSetBarcode(string barcode)
         {
             var client = new HttpClient(); /// get the client id 
@@ -170,6 +203,11 @@ namespace LegoMobile
             return setResponse;
         }
 
+        /// <summary>
+        /// This code fetches the API respose of DeleteSet
+        /// </summary>
+        /// <param name="setNumer"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteSet(string setNumer)
         {
             try
@@ -191,6 +229,12 @@ namespace LegoMobile
             }
         }
 
+
+        /// <summary>
+        /// This code fetches the API respose of ShowSetInCollection
+        /// </summary>
+        /// <param name="setId"></param>
+        /// <returns></returns>
         public async Task<Sets.Set> ShowSetInCollection(string setId)
         {
             var client = new HttpClient(); /// get the client id 
@@ -205,7 +249,15 @@ namespace LegoMobile
         }
 
 
-
+        /// <summary>
+        /// This code fetches the API respose of CreateSet
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="setNumber"></param>
+        /// <param name="picture"></param>
+        /// <param name="themeId"></param>
+        /// <param name="barcode"></param>
+        /// <returns></returns>
         public async Task<bool> CreateSet(string name, string setNumber, Stream picture, int themeId, string barcode)
         {
             string pictureName = await UploadImage(picture);
@@ -234,6 +286,12 @@ namespace LegoMobile
                 return false;
             }
         }
+
+        /// <summary>
+        /// This code fetches the API respose of UploadImage
+        /// </summary>
+        /// <param name="picture"></param>
+        /// <returns></returns>
         public async Task<string> UploadImage(Stream picture)
         {
             var client = new HttpClient();
@@ -250,7 +308,10 @@ namespace LegoMobile
 
 
 
-
+        /// <summary>
+        /// This code fetches the API respose of ShowCollections
+        /// </summary>
+        /// <returns></returns>
         public async Task<List<Collections.Collection>> ShowCollections()
         {
             var client = new HttpClient(); /// get the client id
@@ -265,6 +326,11 @@ namespace LegoMobile
             return collectionList;
         }
 
+        /// <summary>
+        /// This code fetches the API respose of CreateCollections
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public async Task<bool> CreateCollections(string name)
         {
             try
@@ -288,6 +354,11 @@ namespace LegoMobile
             }
         }
 
+        /// <summary>
+        /// This code fetches the API respose of DeleteCollections
+        /// </summary>
+        /// <param name="collectionId"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteCollections(string collectionId)
         {
             try
@@ -310,6 +381,11 @@ namespace LegoMobile
 
 
 
+        /// <summary>
+        /// This code fetches the API respose of ShowCollectionSets
+        /// </summary>
+        /// <param name="collectionId"></param>
+        /// <returns></returns>
         public async Task<List<Sets.Set>> ShowCollectionSets(string collectionId)
         {
             var client = new HttpClient(); /// get the client id
@@ -324,6 +400,12 @@ namespace LegoMobile
             return setList;
         }
 
+        /// <summary>
+        /// This code fetches the API respose of ShowCollectionSetId
+        /// </summary>
+        /// <param name="setId"></param>
+        /// <param name="collectionId"></param>
+        /// <returns></returns>
         public async Task<int> ShowCollectionSetId(string setId, string collectionId)
         {
             var client = new HttpClient(); /// get the client id
@@ -338,6 +420,11 @@ namespace LegoMobile
             return collectionSet.Id;
         }
 
+        /// <summary>
+        /// This code fetches the API respose of DeleteCollectionSet
+        /// </summary>
+        /// <param name="collectionId"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteCollectionSet(int collectionId)
         {
             try
@@ -358,6 +445,12 @@ namespace LegoMobile
             }
         }
 
+        /// <summary>
+        /// This code fetches the API respose of CreateSetInCollection
+        /// </summary>
+        /// <param name="setId"></param>
+        /// <param name="collectionId"></param>
+        /// <returns></returns>
         public async Task<bool> CreateSetInCollection(string setId, string collectionId)
         {
             try
