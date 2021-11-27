@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace LegoMobile.Sets
-{
-    public class Set
+{   /// <summary>
+    /// class Set 
+    /// </summary>
+     public class Set
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -19,7 +21,15 @@ namespace LegoMobile.Sets
         {
 
         }
-
+        /// <summary>
+        /// constracter with below parametra
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <param name="set_number"></param>
+        /// <param name="picture"></param>
+        /// <param name="theme_id"></param>
+        /// <param name="barcode"></param>
         public Set(int id, string name, string set_number, string picture, int theme_id, string barcode)
         {
             Id = id;
