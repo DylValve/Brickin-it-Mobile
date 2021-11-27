@@ -23,6 +23,10 @@ namespace LegoMobile
             newSet = set; // Makes the newSet value equal the set reference
         }
 
+        /// <summary>
+        /// Scans a barcode and gets the information from it
+        /// </summary>
+        /// <param name="result"></param>
         public void scanView_OnScanResult(Result result)
         {
             newSet.Barcode = result.Text; // Gets the barcode scan result number

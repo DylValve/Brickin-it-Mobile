@@ -17,7 +17,11 @@ namespace LegoMobile.Users
             InitializeComponent();
         }
 
-        // creates a new account for the user
+        /// <summary>
+        /// creates a new account for the user
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public async void RegisterButton_Clicked(object sender, EventArgs e)
         {
             try

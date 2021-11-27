@@ -38,6 +38,7 @@ namespace LegoMobile
             }
         }
 
+
         public async void LoginPage()
         {
             // navigates to the login page
