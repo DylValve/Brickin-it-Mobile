@@ -20,7 +20,7 @@ namespace LegoMobile.Collections.AddSetToCollection
             currentCollectionId = collectionId;
         }
         /// <summary>
-        /// looking for available set 
+        /// looking for available sets
         /// </summary>
         /// <param name="APISet"></param>
         public async void APIFoundSet(Sets.Set APISet)
