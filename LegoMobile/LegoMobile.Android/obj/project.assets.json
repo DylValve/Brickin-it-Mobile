@@ -2486,18 +2486,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\soare\\.nuget\\packages\\": {},
+    "C:\\Users\\patri\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\soare\\Source\\Repos\\Brickiit-Mobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
+      "projectUniqueName": "C:\\Users\\patri\\Documents\\GitHub\\Brickin-it-Mobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
       "projectName": "LegoMobile.Android",
-      "projectPath": "C:\\Users\\soare\\Source\\Repos\\Brickiit-Mobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
-      "packagesPath": "C:\\Users\\soare\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\soare\\Source\\Repos\\Brickiit-Mobile\\LegoMobile\\LegoMobile.Android\\obj\\",
+      "projectPath": "C:\\Users\\patri\\Documents\\GitHub\\Brickin-it-Mobile\\LegoMobile\\LegoMobile.Android\\LegoMobile.Android.csproj",
+      "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\patri\\Documents\\GitHub\\Brickin-it-Mobile\\LegoMobile\\LegoMobile.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2505,7 +2505,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\soare\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\patri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -2520,8 +2520,8 @@
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "C:\\Users\\soare\\Source\\Repos\\Brickiit-Mobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj": {
-              "projectPath": "C:\\Users\\soare\\Source\\Repos\\Brickiit-Mobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj"
+            "C:\\Users\\patri\\Documents\\GitHub\\Brickin-it-Mobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj": {
+              "projectPath": "C:\\Users\\patri\\Documents\\GitHub\\Brickin-it-Mobile\\LegoMobile\\LegoMobile\\LegoMobile.csproj"
             }
           }
         }
