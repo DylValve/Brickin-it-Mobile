@@ -25,6 +25,10 @@ namespace LegoMobile.Sets
 
         private async void AddSetButton_Clicked(object sender, EventArgs e)
         {
+            /*
+             * creating a new set with parametra newSet.Name, newSet.SetNumber, picture, newSet.themeId, newSet.Barcode
+             and send through via API 
+            */
             try
             {
                 newSet.Name = AddSetName.Text;
@@ -52,13 +56,10 @@ namespace LegoMobile.Sets
         private async void OnPickPhotoButton_Clicked(object sender, EventArgs e)
         {
             /*
-            var result = await MediaPicker.CapturePhotoAsync(new MediaPickerOptions
-            {
-                Title = "Please Take a Photo"
-            });
+             * open the gallery with picture to choose and added to theset we are creating
+             */
 
-            imageSource = await result.OpenReadAsync();
-            */
+            
 
             
             try
@@ -82,12 +83,18 @@ namespace LegoMobile.Sets
 
         private async void BarcodeButton_Clicked(object sender, EventArgs e)
         {
+            /*
+             * allow to scan barcode on the set we like to retrive information 
+             */
             ScanPage scanPage = new ScanPage(newSet);
             await Navigation.PushModalAsync(scanPage);
         }
 
         private async void backArrow_Clicked(object sender, EventArgs e)
         {
+            /*
+             * allow the user to navigate back pages 
+             */
             await Navigation.PopModalAsync();
         }
     }
