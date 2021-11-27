@@ -225,3 +225,34 @@ C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMo
 C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\ref\LegoMobile.dll
 C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.pdb
 C:\Users\kyelb\Desktop\Brickin-it-Mobile (2)\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.deps.json
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.dll
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\ref\LegoMobile.dll
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\bin\Debug\netstandard2.0\LegoMobile.pdb
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddCollection.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionAddManuallySet.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionFoundSet.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\AddSetToCollection\CollectionLookUpSet.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewAllCollections.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollection.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Collections\ViewCollectionSet.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\FirstPage.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainMenuPage.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\PhotoPage.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ScanPage.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\AddManuallySet.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\FoundSet.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Sets\LookUpSet.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\Login.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\Users\SignUp.xaml.g.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfoInputs.cache
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.AssemblyInfo.cs
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csproj.CoreCompileInputs.cache
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.dll
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\ref\LegoMobile.dll
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.pdb
+C:\Users\patri\Documents\GitHub\Brickin-it-Mobile\LegoMobile\LegoMobile\obj\Debug\netstandard2.0\LegoMobile.csproj.AssemblyReference.cache

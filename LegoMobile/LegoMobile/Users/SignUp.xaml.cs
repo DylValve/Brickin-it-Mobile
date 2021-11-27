@@ -20,35 +20,46 @@ namespace LegoMobile.Users
 
         public async void RegisterButton_Clicked(object sender, EventArgs e)
         {
-            string nameEntry = NameEntry.Text;
-            string emailEntry = EmailEntry.Text.ToLower();
-            string passwordEntry = PasswordEntry.Text;
-            string confirmPasswordEntry = ConfirmPasswordEntry.Text;
-
-            bool success = await ((App)Application.Current).API.RegisterRequest(nameEntry, emailEntry, passwordEntry, confirmPasswordEntry);
-
-            if (success)
+            try
             {
-                Console.WriteLine("Login");
-                MainPage();
+                string nameEntry = NameEntry.Text;
+                string emailEntry = EmailEntry.Text.ToLower();
+                string passwordEntry = PasswordEntry.Text;
+                string confirmPasswordEntry = ConfirmPasswordEntry.Text;
+
+                bool success = await ((App)Application.Current).API.RegisterRequest(nameEntry, emailEntry, passwordEntry, confirmPasswordEntry);
+
+                if (success)
+                {
+                    Console.WriteLine("Login");
+                    MainPage();
+                }
+                else
+                {
+                    if (nameEntry == null || emailEntry == null || passwordEntry == null || confirmPasswordEntry == null)
+                    {
+                        await DisplayAlert("Alert", "Missing one or more parameters", "ok");
+                        return;
+                    }
+                    if (passwordEntry != confirmPasswordEntry)
+                    {
+                        await DisplayAlert("Alert", "Passwords don't match", "ok");
+                        PasswordEntry.Text = "";
+                        ConfirmPasswordEntry.Text = "";
+                        return;
+                    }
+
+                    Console.WriteLine("Entry Denied");
+                    return;
+                }
             }
-            else
+            catch
             {
-                if (nameEntry == null || emailEntry == null || passwordEntry == null || confirmPasswordEntry == null)
+                Device.BeginInvokeOnMainThread(async () =>
                 {
-                    await DisplayAlert("Alert", "Missing one or more parameters", "ok");
+                    await DisplayAlert("Alert", "An error has occurred. Cannot register an account.", "OK");
                     return;
-                }
-                if( passwordEntry != confirmPasswordEntry)
-                {
-                    await DisplayAlert("Alert", "Passwords don't match", "ok");
-                    PasswordEntry.Text = "";
-                    ConfirmPasswordEntry.Text = "";
-                    return;
-                }
-
-                Console.WriteLine("Entry Denied");
-                return;
+                });
             }
         }
 

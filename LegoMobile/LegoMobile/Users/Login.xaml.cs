@@ -19,29 +19,41 @@ namespace LegoMobile.Users
 
         private async void LoginButton_Clicked(object sender, EventArgs e)
         {
-            string emailEntry = EmailEntry.Text.ToLower();
-            string passwordEntry = PasswordEntry.Text;
-            //not picking up emails 
-            if (EmailEntry.Text == null || PasswordEntry.Text == null)
+            try
             {
-                await DisplayAlert("Alert", "Missing one or more parameters", "OK");
-                return;
-            }
-            bool success = await ((App)Application.Current).API.LoginRequest(emailEntry, passwordEntry);
+                string emailEntry = EmailEntry.Text.ToLower();
+                string passwordEntry = PasswordEntry.Text;
+                //not picking up emails 
+                if (EmailEntry.Text == null || PasswordEntry.Text == null)
+                {
+                    await DisplayAlert("Alert", "Missing one or more parameters", "OK");
+                    return;
+                }
 
-            if (success)
-            {
-                Console.WriteLine("Login");
-                MainPage();
-            }
-            else
-            {
-                await DisplayAlert("Alert", "Invalid account please try again", "OK");
-                EmailEntry.Text = "";
-                PasswordEntry.Text = "";
+                bool success = await ((App)Application.Current).API.LoginRequest(emailEntry, passwordEntry);
 
-                Console.WriteLine("Entry Denied");
-                return;
+                if (success)
+                {
+                    Console.WriteLine("Login");
+                    MainPage();
+                }
+                else
+                {
+                    await DisplayAlert("Alert", "Invalid account please try again", "OK");
+                    EmailEntry.Text = "";
+                    PasswordEntry.Text = "";
+
+                    Console.WriteLine("Entry Denied");
+                    return;
+                }
+            }
+            catch
+            {
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    await DisplayAlert("Alert", "An error has occurred. Cannot login.", "OK");
+                    return;
+                });
             }
         }
 
