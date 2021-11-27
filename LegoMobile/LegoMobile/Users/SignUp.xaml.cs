@@ -17,16 +17,18 @@ namespace LegoMobile.Users
             InitializeComponent();
         }
 
-
+        // creates a new account for the user
         public async void RegisterButton_Clicked(object sender, EventArgs e)
         {
             try
             {
+                // gets the values of the entrys
                 string nameEntry = NameEntry.Text;
                 string emailEntry = EmailEntry.Text.ToLower();
                 string passwordEntry = PasswordEntry.Text;
                 string confirmPasswordEntry = ConfirmPasswordEntry.Text;
 
+                // triggers the RegisterRequest API response call in the API service
                 bool success = await ((App)Application.Current).API.RegisterRequest(nameEntry, emailEntry, passwordEntry, confirmPasswordEntry);
 
                 if (success)
@@ -36,13 +38,17 @@ namespace LegoMobile.Users
                 }
                 else
                 {
+                    // tests if entrys are empty
                     if (nameEntry == null || emailEntry == null || passwordEntry == null || confirmPasswordEntry == null)
                     {
                         await DisplayAlert("Alert", "Missing one or more parameters", "ok");
                         return;
                     }
+                    
+                    // tests if passwords match
                     if (passwordEntry != confirmPasswordEntry)
                     {
+                        // display alert for passwords not matching
                         await DisplayAlert("Alert", "Passwords don't match", "ok");
                         PasswordEntry.Text = "";
                         ConfirmPasswordEntry.Text = "";
@@ -55,6 +61,7 @@ namespace LegoMobile.Users
             }
             catch
             {
+                // display alert for no internet
                 Device.BeginInvokeOnMainThread(async () =>
                 {
                     await DisplayAlert("Alert", "An error has occurred. Cannot register an account.", "OK");
