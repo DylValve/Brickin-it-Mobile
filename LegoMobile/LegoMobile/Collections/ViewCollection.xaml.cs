@@ -33,6 +33,13 @@ namespace LegoMobile.Collections
             AddSettoColletion();
         }
 
+        /// <summary>
+        /// This will create a Label and 2 buttons for every objacet in the list on collections
+        /// The lable will be the Set Name 
+        /// One Button wil be for view sets inforamtion 
+        /// The last on is to delete button
+        /// style is also applied to in C# for the labe and button
+        /// </summary>
         public async void InitialiseUIFromCode()
         {
             Collection collection = await ((App)Application.Current).API.ShowCollection(currentCollectionId);
@@ -86,23 +93,32 @@ namespace LegoMobile.Collections
             }
         }
 
+        /// <summary>
+        /// Will Delete the Colletion for the users list of colections
+        /// if pressed an alert will dispaly as a confimation for the user
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void DynamicDeleteBtn_Clicked(object sender, EventArgs e)
         {
             var myBtn = sender as Button;
             // who called me?
-            var setId = myBtn.StyleId; //this was set during dynamic creation
+            var myId = myBtn.StyleId; //this was set during dynamic creation
 
-            int Id = await ((App)Application.Current).API.ShowCollectionSetId(setId, currentCollectionId);
-
-            await ((App)Application.Current).API.DeleteCollectionSet(Id);
+            await ((App)Application.Current).API.DeleteCollections(myId);
 
             InitialiseUIFromCode();
-        }
 
+        }
+        /// <summary>
+        /// Used to get the list of sets associated to the collections
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void DynamicViewBtn_Clicked(object sender, EventArgs e)
         {
             var myBtn = sender as Button;
-            // who called me?
+            //This is the button sending a signal
             var setId = myBtn.StyleId; //this was set during dynamic creation
 
 
@@ -119,6 +135,11 @@ namespace LegoMobile.Collections
             base.OnAppearing();
         }
 
+        /// <summary>
+        /// To allow the top bar back button to pop back to the previous page 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void backArrow_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();

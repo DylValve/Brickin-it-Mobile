@@ -19,7 +19,10 @@ namespace LegoMobile.Collections.AddSetToCollection
 
             currentCollectionId = collectionId;
         }
-
+        /// <summary>
+        /// looking for available sets
+        /// </summary>
+        /// <param name="APISet"></param>
         public async void APIFoundSet(Sets.Set APISet)
         {
             if (APISet == null)
@@ -63,7 +66,11 @@ namespace LegoMobile.Collections.AddSetToCollection
         {
             DisplayAlert("Alert", "Set not Found", "OK");
         }
-
+        /// <summary>
+        /// To allow the top bar back button to pop back to the previous page 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void backArrow_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();
