@@ -16,6 +16,10 @@ namespace LegoMobile.Sets
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// looking for available set 
+        /// </summary>
+        /// <param name="APISet"></param>
         public async void APIFoundSet(Set APISet)
         {
             if (APISet == null)
@@ -35,7 +39,11 @@ namespace LegoMobile.Sets
         }
 
 
-
+        /// <summary>
+        /// fecthing the set we wiskh to look up and display message if the set is not found
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void FetchAPIButton_Clicked(object sender, EventArgs e)
         {
             try
@@ -65,23 +73,38 @@ namespace LegoMobile.Sets
                 });
             }
         }
-
+        /// <summary>
+        /// connection to the addManuall page
+        /// </summary>
         public async void AddManuallyPage()
         {
             AddManuallySet addManuall = new AddManuallySet();
             await Navigation.PushModalAsync(addManuall);
         }
 
-
+        /// <summary>
+        /// call the above fuction on click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddManuallyButton_Clicked(object sender, EventArgs e)
         {
             AddManuallyPage();
         }
+        /// <summary>
+        /// display a message if the set is not found
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ScanBarcodeButton_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Alert", "Set not Found", "OK");
         }
-
+        /// <summary>
+        /// back to the previous page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void backArrow_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();
