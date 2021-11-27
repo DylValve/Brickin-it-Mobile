@@ -22,13 +22,14 @@ namespace LegoMobile.Sets
             InitializeComponent();
         }
 
-
+        /// <summary>
+        /// creating a new set and send through via API
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void AddSetButton_Clicked(object sender, EventArgs e)
         {
-            /*
-             * creating a new set with parametra newSet.Name, newSet.SetNumber, picture, newSet.themeId, newSet.Barcode
-             and send through via API 
-            */
+           
             try
             {
                 newSet.Name = AddSetName.Text;
@@ -52,16 +53,14 @@ namespace LegoMobile.Sets
                 });
             }
         }
-
+        /// <summary>
+        /// open the gallery on the device with picture to choose and added to theset we are creating
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void OnPickPhotoButton_Clicked(object sender, EventArgs e)
         {
-            /*
-             * open the gallery with picture to choose and added to theset we are creating
-             */
-
-            
-
-            
+           
             try
             {
                 var result = await MediaPicker.PickPhotoAsync(new MediaPickerOptions
@@ -80,21 +79,24 @@ namespace LegoMobile.Sets
             }
             
         }
-
+        /// <summary>
+        /// allow to scan barcode on the set we like to retrive information 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void BarcodeButton_Clicked(object sender, EventArgs e)
         {
-            /*
-             * allow to scan barcode on the set we like to retrive information 
-             */
             ScanPage scanPage = new ScanPage(newSet);
             await Navigation.PushModalAsync(scanPage);
         }
-
+        /// <summary>
+        /// allow the user to navigate back pages 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void backArrow_Clicked(object sender, EventArgs e)
         {
-            /*
-             * allow the user to navigate back pages 
-             */
+          
             await Navigation.PopModalAsync();
         }
     }
